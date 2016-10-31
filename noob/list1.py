@@ -5,15 +5,13 @@
 
 # Google's Python Class
 # http://code.google.com/edu/languages/google-python-class/
-
-
 # A. match_ends
 # Given a list of strings, return the count of the number of
 # strings where the string length is 2 or more and the first
 # and last chars of the string are the same.
 # Note: python does not have a ++ operator, but += works.
 def match_ends(words):
-  # LAB(begin solution)
+  # +++your code here+++
   count = 0
   for word in words:
     if len(word) >= 2 and word[0] == word[-1]:
@@ -28,8 +26,15 @@ def match_ends(words):
 # Hint: this can be done by making 2 lists and sorting each of them
 # before combining them.
 def front_x(words):
-  # +++your code here+++
-  return
+    x_list = []
+    other_list = []
+
+    for w in words:
+      if w.startswith('x'):
+          x_list.append(w)
+      else:
+          other_list.append(w)
+    return sorted (x_list )+ sorted(other_list)
 
 
 
