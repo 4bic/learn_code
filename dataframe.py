@@ -20,11 +20,18 @@ with open('sochi_medals.csv', 'rb') as medals:
     silver = df['Silver']
     bronze = df['Bronze']
 
-    # example sets Countries with 3 or less silvers
+    print "Average  bronze count for countries with at least one gold"
+    bronze_one_gold = bronze[df['Gold'] >=1]
+    avg_bronze_one_gold = np.mean(bronze_one_gold)
+    print (avg_bronze_one_gold)
+
+    print "Average medal count for countries with atleast one medal"
+    avg_medal_count = df[['Gold','Silver', 'Bronze']].apply(np.mean)
+
+    print avg_medal_count
+
     print "Countries with 3 or less silvers"
     print df[df['Silver'] <= 3]
 
-    # Sample countries with no Gold
-    print " "
-    print "countries with no Gold"
-    print df[df['Gold'] <1]
+    print "countries with atleats one Gold"
+    print df[df['Gold'] >=1]
