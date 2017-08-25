@@ -7,7 +7,7 @@ if __name__ == '__main__':
     '''create pandas dataframe '''
 
     # read csv
-    mca_data =  pandas.read_csv('Kenya_MCA_2017.csv')
+    mca_data =  pandas.read_csv('mca_data.csv')
     #create dataframe
     mca_df = pandas.DataFrame(mca_data)
     # combine surname and other name into Full Name
