@@ -3,6 +3,16 @@ import pandas as pd
 from pandas import *
 import scipy.stats
 
+def compute_cost(features, values, theta):
+    """
+    Compute the cost function given a set of features / values of a theta
+    """
+    m = len(values)
+    sum_of_square_errors = np.square(np.dot(features, theta) - values).sum()
+    cost = sum_of_square_errors / (2 * m)
+
+    return cost
+    
 def gradient_descent(features, values, theta, aipha, num_iterations):
     '''
     Perform gradient_descent given a dataset with arbitrary number
