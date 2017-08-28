@@ -12,7 +12,7 @@ def compute_cost(features, values, theta):
     cost = sum_of_square_errors / (2 * m)
 
     return cost
-    
+
 def gradient_descent(features, values, theta, aipha, num_iterations):
     '''
     Perform gradient_descent given a dataset with arbitrary number
