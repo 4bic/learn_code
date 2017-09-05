@@ -3,6 +3,15 @@ import pandas as pd
 from pandas import *
 import scipy.stats
 
+def normalize_features(features, mu, sigma):
+    """
+    Normalize features from the dataset
+    """
+    array_normalized = (array - array.mean())/array.std()
+    mu = array.mean()
+    sigma = array.std()
+
+
 def compute_cost(features, values, theta):
     """
     Compute the cost function given a set of features / values of a theta
@@ -38,6 +47,6 @@ if __name__ == '__main__':
     features = data[['height', 'weight']]
     values = data[['HR']]
     m = len(values)
-
+    
     # Normalize features
     features, mu, sigma = normalize_features(features)
