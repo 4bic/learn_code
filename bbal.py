@@ -7,9 +7,7 @@ if __name__ == '__main__':
     '''create pandas dataframe '''
 
     # read csv
-    raw_data =  pandas.read_csv('data/PitchingPost.csv')
-    #create dataframe
-    data_df = pandas.DataFrame(raw_data)
+    data_df =  pandas.read_csv('data/PitchingPost.csv')
     # extract only the columns that we need
     year = data_df['yearID']
     hr = data_df['HR']
