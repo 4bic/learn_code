@@ -22,3 +22,6 @@ def reducer():
 
     if old_key != None:
         print "{0}\t{1}".format(old_key, word_count)
+
+if __name__ == '__main__':
+    reducer()
