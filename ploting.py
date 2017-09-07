@@ -10,7 +10,7 @@ def lineplot():
     print ggplot(hr_year, aes('yearID', 'HR')) + geom_point(color='red')+ geom_line(color='red')+ ggtitle('Total HRs by Year') + xlab('Year')+ ylab('Home_Runs')
 
 
-# the generated plot is at ('plots / hr_year')
+# the generated plot is at ('plots / hr_year.png')
 
 def lineplot_compare():
     hr_by_team = pd.read_csv('data/hr_by_team_year_sln_lan.csv')
@@ -19,4 +19,4 @@ def lineplot_compare():
 
 if __name__ == '__main__':
     #lineplot()
-    lineplot_compare()
+    lineplot_compare() # the generated plot is at ('plots / hr_by_team.png')
