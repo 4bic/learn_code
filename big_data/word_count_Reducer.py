@@ -25,3 +25,5 @@ def reducer():
 
 if __name__ == '__main__':
     reducer()
+# to run locally the MapReduce function
+ # $ cat ./data/man_in_arena.txt | python big_data/word_count_with_Mapper.py | sort | python big_data/word_count_Reducer.py
