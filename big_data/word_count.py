@@ -6,10 +6,10 @@ def word_count():
     # cycle through lines of input
     for line in sys.stdin:
         # create an array of words
-        data = line.strip.split(" ")
+        data = line.strip().split(" ")
 
         for i in data:
-            key = i.translate(string.maketrans("","",string.punctuation).lower)
+            key = i.translate(string.maketrans("",""),string.punctuation).lower()
             if key in word_counts.key():
                 word_counts[key] += 1
             else:
@@ -18,5 +18,4 @@ def word_count():
         print word_counts
 
 
-if __name__ == '__main__':
-    word_count()
+word_count()
