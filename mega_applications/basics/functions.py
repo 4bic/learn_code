@@ -6,7 +6,7 @@ def seconds_to_hours(seconds):
     hours = seconds / 3600.00
     return hours
 
-def mins_and_secs_to_hours(mins, secs):
+def mins_and_secs_to_hours(minutes, seconds):
     hours = mins / 60.00 + secs / 3600.00
     return hours
 
