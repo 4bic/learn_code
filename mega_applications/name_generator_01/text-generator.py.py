@@ -55,4 +55,5 @@ def generator():
 
     return (name)
 
-print(generator())
+for i in range(20):
+    print(generator())
