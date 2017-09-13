@@ -10,10 +10,19 @@ nom = Nominatim()
 
 def geocoder():
     # open file
-    df_4 = pd.read_csv('supermarkets.csv')
+    df = pd.read_csv('supermarkets.csv')
     # combine columns with addresses within the dataframe i.e city, state, Country and address
-    df_4["Address"] = df_4["Address"]+", "+df_4["City"]+", "+df_4["State"]+", "+df_4["Country"]
+    df["Address"] = df["Address"]+", "+df["City"]+", "+df["State"]+", "+df["Country"]
     # geocode the "Address" column
-    df_4["Coordinates"] = df_4["Address"].apply(nom.geocode)
+    df["Coordinates"] = df["Address"].apply(nom.geocode)
+    # fetch latitude and longitude value from the dataframe and add as columns
+    #Latitude
+    df["Latitude"] = df["Coordinates"].apply(lambda x: x.latitude if x != None else None)
+    #Longitude
+    df["Longitude"] = df["Coordinates"].apply(lambda x: x.longitude if x != None else None)
 
-    return df_4
+    # write to csv
+    df.to_csv('geocoded.csv')
+    
+if __name__ == '__main__':
+    geocoder()
