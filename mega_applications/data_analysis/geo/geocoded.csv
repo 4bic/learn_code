@@ -1,0 +1,7 @@
+,ID,Address,City,State,Country,Name,Employees,Coordinates,Latitude,Longitude
+0,1,"3666 21st St, San Francisco, CA 94114, USA",San Francisco,CA 94114,USA,Madeira,8,"21st Street, Castro District, SF, California, 94114, United States of America",37.7554451,-122.4387699
+1,2,"735 Dolores St, San Francisco, CA 94119, USA",San Francisco,CA 94119,USA,Bready Shop,15,,,
+2,3,"332 Hill St, San Francisco, California 94114, USA",San Francisco,California 94114,USA,Super River,25,"Hill Street, Liberty Street Historic District, SF, California, 94114, United States of America",37.756102,-122.421041
+3,4,"3995 23rd St, San Francisco, CA 94114, USA",San Francisco,CA 94114,USA,Ben's Shop,10,"3995, 23rd Street, Noe Valley, SF, California, 94114, United States of America",37.7529648,-122.4317141
+4,5,"1056 Sanchez St, San Francisco, California, USA",San Francisco,California,USA,Sanchez,12,"Sanchez Street, Noe Valley, SF, California, 94114, United States of America",37.748362,-122.429346
+5,6,"551 Alvarado St, San Francisco, CA 94114, USA",San Francisco,CA 94114,USA,Richvalley,20,"Alvarado Street, Noe Valley, SF, California, 94114, United States of America",37.753666,-122.43444
