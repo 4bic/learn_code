@@ -31,9 +31,13 @@ while True:
         with open(hosts_temp, 'r+') as file:
             # store details in a form we can pass around
             content = file.readlines()
+            # move pointer to top of file
+            file.seek(0)
             for line in content:
                 # check presence of domains in list otherwise write it
                 if not any(website in line for website in website_list):
                     file.write(line)
+            # removes all details at the bottom of file to prevent duplication
+            file.truncate()
         print ("Fun hour . .('_')")
     time.sleep(5)
