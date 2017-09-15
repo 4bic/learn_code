@@ -10,16 +10,30 @@ redirect = "127.0.0.1"
 website_list = ["www.facebook.com", "www.twitter.com", "mail.google.com"]
 
 while True:
-    if dt(dt.now().year,dt.now().month,dt.now().day,8)< dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,16):
+    # check what time it is
+    if dt(dt.now().year,dt.now().month,dt.now().day,9)< dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,17):
         print("Working hours ....")
+        # open the hosts file
         with open(hosts_temp, 'r+') as file:
+            # save details in a variable
             content = file.read()
+            # check presence of our domains to be evaluated
             for website in website_list:
+                # if domain exist move on
                 if website in content:
                     pass
                 else:
+                    # otherwise add it(domain name) to list of redirects
                     file.write(redirect+" "+ website+"\n")
 
     else:
+        # open the hostfile again
+        with open(hosts_temp, 'r+') as file:
+            # store details in a form we can pass around
+            content = file.readlines()
+            for line in content:
+                # check presence of domains in list otherwise write it
+                if not any(website in line for website in website_list):
+                    file.write(line)
         print ("Fun hour . .('_')")
     time.sleep(5)
