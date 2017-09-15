@@ -3,7 +3,7 @@ from datetime import datetime as dt
 
 # determine where the host file is located
 hosts_temp = 'hosts'
-#hosts_path =  "/etc/hosts"
+hosts_path =  "/etc/hosts"
 # prefered url to redirect from distracting sites
 redirect = "127.0.0.1"
 # sites to be blocked from
@@ -14,7 +14,7 @@ while True:
     if dt(dt.now().year,dt.now().month,dt.now().day,9)< dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,17):
         print("Working hours ....")
         # open the hosts file
-        with open(hosts_temp, 'r+') as file:
+        with open(hosts_path, 'r+') as file:
             # save details in a variable
             content = file.read()
             # check presence of our domains to be evaluated
@@ -28,7 +28,7 @@ while True:
 
     else:
         # open the hostfile again
-        with open(hosts_temp, 'r+') as file:
+        with open(hosts_path, 'r+') as file:
             # store details in a form we can pass around
             content = file.readlines()
             # move pointer to top of file
@@ -39,5 +39,5 @@ while True:
                     file.write(line)
             # removes all details at the bottom of file to prevent duplication
             file.truncate()
-        print ("Fun hour . .('_')")
+        print ("Fun hour . . . .")
     time.sleep(5)
