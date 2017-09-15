@@ -17,7 +17,9 @@ while True:
             for website in website_list:
                 if website in content:
                     pass
-                    
+                else:
+                    file.write(redirect+" "+ website+"\n")
+
     else:
         print ("Fun hour . .('_')")
     time.sleep(5)
