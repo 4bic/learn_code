@@ -4,7 +4,6 @@ from Tkinter import *
 window = Tk()
 
 def km_to_miles():
-    print(e1_value.get())
     miles =float(e1_value.get())*1.60
     t1.insert(END, miles)
 
