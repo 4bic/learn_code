@@ -5,7 +5,8 @@ window = Tk()
 
 def km_to_miles():
     print(e1_value.get())
-    t1.insert(END, e1_value.get())
+    miles =float(e1_value.get())*1.60
+    t1.insert(END, miles)
 
 # create widget button
 b1 = Button(window, text="Execute", command=km_to_miles)
