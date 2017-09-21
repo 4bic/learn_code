@@ -8,16 +8,30 @@ longitude = list(volcano_data["LON"])
 elevation = list(volcano_data["ELEV"])
 marker_name = volcano_data["LOCATION"]
 
+def elevate_color(elevation):
+    if elevation < 1000:
+        return 'green'
+    elif 1000 < elevation < 3000:
+        return 'orange'
+    else:
+        return 'red'
+
 # create base map
-map = folium.Map(location=[ 38.58, -99.09], zoom_start=12, tiles="Mapbox Bright")
+map = folium.Map(location=[ 38.58, -99.09], zoom_start=3, tiles="Mapbox Bright")
 # utilize a feature group object to add multiple features
-fg = folium.FeatureGroup(name="My Map")
+fg = folium.FeatureGroup(name="US Volcanoes")
 
 # iterate over the data file and use location data
 for lt, ln, el,nm in zip(latitude,longitude, elevation, marker_name):
     # add a each marker
-    fg.add_child(folium.Marker(location=[lt,ln], popup=str(nm)+ "-"+str(el), icon=folium.Icon(color='green')))
+    fg.add_child(folium.CircleMarker(location=[lt, ln], radius = 6, popup=str(el)+" m",
+    fill_color=elevate_color(el), color = 'grey', fill_opacity=0.7))
+
+
+fg.add_child(folium.GeoJson(data=open('world.json', 'r', encoding="utf-8-sig"),
+style_function=lambda x: {'fillColor':'yellow'}))
 
 map.add_child(fg)
+
 # save genarated map
-map.save("US_VOLCANOES.html")
+map.save("volcanoes.html")
