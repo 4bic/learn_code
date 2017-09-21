@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_181cc6562a5145d29bcd528e8e032b16 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_181cc6562a5145d29bcd528e8e032b16" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_181cc6562a5145d29bcd528e8e032b16 = L.map(
+                                  'map_181cc6562a5145d29bcd528e8e032b16',
+                                  {center: [38.58,-99.09],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_aeee6b289ab04172a5535bbc053d883f = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null, 
+  "detectRetina": false, 
+  "maxZoom": 18, 
+  "minZoom": 1, 
+  "noWrap": false, 
+  "subdomains": "abc"
+}
+                ).addTo(map_181cc6562a5145d29bcd528e8e032b16);
+        
+    
+            var feature_group_0f31560177da4f308d0b9402a972e8bf = L.featureGroup(
+                ).addTo(map_181cc6562a5145d29bcd528e8e032b16);
+        
+    
+
+            var marker_8b8d96901765442bb7abb1a327eac8d3 = L.marker(
+                [48.7767982,-121.810997],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_6d212e2a267f475f8ed7e256fbb4355a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8b8d96901765442bb7abb1a327eac8d3.setIcon(icon_6d212e2a267f475f8ed7e256fbb4355a);
+            
+    
+            var popup_0255ea4814bb4c6c919f1faf65aace8f = L.popup({maxWidth: '300'});
+
+            
+                var html_0468f176a9d24e8bbbff81e682dbea02 = $('<div id="html_0468f176a9d24e8bbbff81e682dbea02" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_0255ea4814bb4c6c919f1faf65aace8f.setContent(html_0468f176a9d24e8bbbff81e682dbea02);
+            
+
+            marker_8b8d96901765442bb7abb1a327eac8d3.bindPopup(popup_0255ea4814bb4c6c919f1faf65aace8f);
+
+            
+        
+    
+
+            var marker_f6a225b4074a4a1c8cf14ce881b82afa = L.marker(
+                [48.1118011,-121.1110001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_638734fe80fc49048e4059794a0b902b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f6a225b4074a4a1c8cf14ce881b82afa.setIcon(icon_638734fe80fc49048e4059794a0b902b);
+            
+    
+            var popup_e7533e509d4e4a6b96367877e44e0931 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f4a13543fa44bba94d4edfe7cb5e038 = $('<div id="html_5f4a13543fa44bba94d4edfe7cb5e038" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_e7533e509d4e4a6b96367877e44e0931.setContent(html_5f4a13543fa44bba94d4edfe7cb5e038);
+            
+
+            marker_f6a225b4074a4a1c8cf14ce881b82afa.bindPopup(popup_e7533e509d4e4a6b96367877e44e0931);
+
+            
+        
+    
+
+            var marker_d573c2a5a59b4d0eb0ba700d0471fffa = L.marker(
+                [46.8698006,-121.7509995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_9e2ea85f859246419f53acfd21fa334e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d573c2a5a59b4d0eb0ba700d0471fffa.setIcon(icon_9e2ea85f859246419f53acfd21fa334e);
+            
+    
+            var popup_7ab77d0861674fb6a280c65cae37f98d = L.popup({maxWidth: '300'});
+
+            
+                var html_2c8a656ff7e84bcc8f36a5a71465004c = $('<div id="html_2c8a656ff7e84bcc8f36a5a71465004c" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_7ab77d0861674fb6a280c65cae37f98d.setContent(html_2c8a656ff7e84bcc8f36a5a71465004c);
+            
+
+            marker_d573c2a5a59b4d0eb0ba700d0471fffa.bindPopup(popup_7ab77d0861674fb6a280c65cae37f98d);
+
+            
+        
+    
+
+            var marker_b6d1841859c0476b9e1a5b58c6b5ef93 = L.marker(
+                [46.1997986,-122.1809998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_c84f75991e5549809072ddd70987ffab = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b6d1841859c0476b9e1a5b58c6b5ef93.setIcon(icon_c84f75991e5549809072ddd70987ffab);
+            
+    
+            var popup_8e0a87d82ee54523ad3aff1bf1a66cd0 = L.popup({maxWidth: '300'});
+
+            
+                var html_68f3674defc141ea9381fbca61b9ae0c = $('<div id="html_68f3674defc141ea9381fbca61b9ae0c" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_8e0a87d82ee54523ad3aff1bf1a66cd0.setContent(html_68f3674defc141ea9381fbca61b9ae0c);
+            
+
+            marker_b6d1841859c0476b9e1a5b58c6b5ef93.bindPopup(popup_8e0a87d82ee54523ad3aff1bf1a66cd0);
+
+            
+        
+    
+
+            var marker_f938f16745db451fb1204188cfad3bbb = L.marker(
+                [46.2057991,-121.4909973],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_d14f7c3dd8c042deb848ce96325216b0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f938f16745db451fb1204188cfad3bbb.setIcon(icon_d14f7c3dd8c042deb848ce96325216b0);
+            
+    
+            var popup_158fc437783943b69bc6b72c2958e35f = L.popup({maxWidth: '300'});
+
+            
+                var html_4b46d09d0dfe4743893d39c398f9a028 = $('<div id="html_4b46d09d0dfe4743893d39c398f9a028" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_158fc437783943b69bc6b72c2958e35f.setContent(html_4b46d09d0dfe4743893d39c398f9a028);
+            
+
+            marker_f938f16745db451fb1204188cfad3bbb.bindPopup(popup_158fc437783943b69bc6b72c2958e35f);
+
+            
+        
+    
+
+            var marker_615ee48a2e054c3aae7330b50ba464fb = L.marker(
+                [45.8797989,-122.0810013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_207a4b11886a4c54a6160f3e3ce8b969 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_615ee48a2e054c3aae7330b50ba464fb.setIcon(icon_207a4b11886a4c54a6160f3e3ce8b969);
+            
+    
+            var popup_3c51f1384ecb4963ac103eb9f59f4abf = L.popup({maxWidth: '300'});
+
+            
+                var html_5c8c3b179a4c4c3d983cc06cb9ffd97b = $('<div id="html_5c8c3b179a4c4c3d983cc06cb9ffd97b" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_3c51f1384ecb4963ac103eb9f59f4abf.setContent(html_5c8c3b179a4c4c3d983cc06cb9ffd97b);
+            
+
+            marker_615ee48a2e054c3aae7330b50ba464fb.bindPopup(popup_3c51f1384ecb4963ac103eb9f59f4abf);
+
+            
+        
+    
+
+            var marker_867b3a1e09244a04a6bc7778359431dc = L.marker(
+                [45.9297981,-121.8209991],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_cb7333b15be644d2a8004ade9ed02785 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_867b3a1e09244a04a6bc7778359431dc.setIcon(icon_cb7333b15be644d2a8004ade9ed02785);
+            
+    
+            var popup_38361e80652545fda4ded690aaaa481a = L.popup({maxWidth: '300'});
+
+            
+                var html_ccdf5960d1774d7584a724026511872e = $('<div id="html_ccdf5960d1774d7584a724026511872e" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_38361e80652545fda4ded690aaaa481a.setContent(html_ccdf5960d1774d7584a724026511872e);
+            
+
+            marker_867b3a1e09244a04a6bc7778359431dc.bindPopup(popup_38361e80652545fda4ded690aaaa481a);
+
+            
+        
+    
+
+            var marker_5c8a2c86dc2243f8ba9805d8d51d28b6 = L.marker(
+                [45.3737984,-121.6910019],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_fce2c6df5bdc4d04a27f6b20d0e7e2c5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5c8a2c86dc2243f8ba9805d8d51d28b6.setIcon(icon_fce2c6df5bdc4d04a27f6b20d0e7e2c5);
+            
+    
+            var popup_f0b1f779c60a44ef9349e74570a0b773 = L.popup({maxWidth: '300'});
+
+            
+                var html_067a0a9c88be4510b07ec7e6fd85c6ab = $('<div id="html_067a0a9c88be4510b07ec7e6fd85c6ab" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_f0b1f779c60a44ef9349e74570a0b773.setContent(html_067a0a9c88be4510b07ec7e6fd85c6ab);
+            
+
+            marker_5c8a2c86dc2243f8ba9805d8d51d28b6.bindPopup(popup_f0b1f779c60a44ef9349e74570a0b773);
+
+            
+        
+    
+
+            var marker_18bdc31ab4ee41d18bd9c75f1b9c7ba4 = L.marker(
+                [44.6917992,-121.8010025],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_f9c759e898434e07a2f7c4e05c509e8d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_18bdc31ab4ee41d18bd9c75f1b9c7ba4.setIcon(icon_f9c759e898434e07a2f7c4e05c509e8d);
+            
+    
+            var popup_3f0cde17e3664861831d5289beae5e20 = L.popup({maxWidth: '300'});
+
+            
+                var html_2f0216787dba4cec9a07ca5b888093cb = $('<div id="html_2f0216787dba4cec9a07ca5b888093cb" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_3f0cde17e3664861831d5289beae5e20.setContent(html_2f0216787dba4cec9a07ca5b888093cb);
+            
+
+            marker_18bdc31ab4ee41d18bd9c75f1b9c7ba4.bindPopup(popup_3f0cde17e3664861831d5289beae5e20);
+
+            
+        
+    
+
+            var marker_2bca50f634ff40cabb085a5762543f62 = L.marker(
+                [44.4197998,-121.7710037],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_85cf6796140e4534968de621b7ba88be = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2bca50f634ff40cabb085a5762543f62.setIcon(icon_85cf6796140e4534968de621b7ba88be);
+            
+    
+            var popup_06175adf8f1c413c9be804eb7884f173 = L.popup({maxWidth: '300'});
+
+            
+                var html_383927e86d154e489fe53e11a00fd166 = $('<div id="html_383927e86d154e489fe53e11a00fd166" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_06175adf8f1c413c9be804eb7884f173.setContent(html_383927e86d154e489fe53e11a00fd166);
+            
+
+            marker_2bca50f634ff40cabb085a5762543f62.bindPopup(popup_06175adf8f1c413c9be804eb7884f173);
+
+            
+        
+    
+
+            var marker_6bfc96d9aac140619d08326f3217fc3b = L.marker(
+                [44.3797989,-121.9309998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_c5f82615ab274defb61ecfe0e0c123e4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6bfc96d9aac140619d08326f3217fc3b.setIcon(icon_c5f82615ab274defb61ecfe0e0c123e4);
+            
+    
+            var popup_f767f9f660f9415498dcfbcd25e3ffe0 = L.popup({maxWidth: '300'});
+
+            
+                var html_8bfe973f28604f23bcc2131299a5d2ae = $('<div id="html_8bfe973f28604f23bcc2131299a5d2ae" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_f767f9f660f9415498dcfbcd25e3ffe0.setContent(html_8bfe973f28604f23bcc2131299a5d2ae);
+            
+
+            marker_6bfc96d9aac140619d08326f3217fc3b.bindPopup(popup_f767f9f660f9415498dcfbcd25e3ffe0);
+
+            
+        
+    
+
+            var marker_e6c302d1a40c443fabede7d8c5aac8f2 = L.marker(
+                [44.3317986,-121.8310013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_bf37501c8ede48f5aa599753a64f93c5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e6c302d1a40c443fabede7d8c5aac8f2.setIcon(icon_bf37501c8ede48f5aa599753a64f93c5);
+            
+    
+            var popup_c71c1060b1404f888a8a395f4c9e147b = L.popup({maxWidth: '300'});
+
+            
+                var html_4cdda4472f8b44e2bd1b03fec077c94e = $('<div id="html_4cdda4472f8b44e2bd1b03fec077c94e" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_c71c1060b1404f888a8a395f4c9e147b.setContent(html_4cdda4472f8b44e2bd1b03fec077c94e);
+            
+
+            marker_e6c302d1a40c443fabede7d8c5aac8f2.bindPopup(popup_c71c1060b1404f888a8a395f4c9e147b);
+
+            
+        
+    
+
+            var marker_2fc0190ae9ac480a9d438ef99ca62635 = L.marker(
+                [44.2848015,-121.8410034],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_e15db289c0954d3a98eaaab392a644f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2fc0190ae9ac480a9d438ef99ca62635.setIcon(icon_e15db289c0954d3a98eaaab392a644f0);
+            
+    
+            var popup_a58240f8ad62464f846010731070abfd = L.popup({maxWidth: '300'});
+
+            
+                var html_851fd8fd0703485593490c368bb13b79 = $('<div id="html_851fd8fd0703485593490c368bb13b79" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_a58240f8ad62464f846010731070abfd.setContent(html_851fd8fd0703485593490c368bb13b79);
+            
+
+            marker_2fc0190ae9ac480a9d438ef99ca62635.bindPopup(popup_a58240f8ad62464f846010731070abfd);
+
+            
+        
+    
+
+            var marker_f375455cbe204585b6132e7d54910aee = L.marker(
+                [44.1697998,-121.7710037],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_b65a519efc034b2ab2b7206dec54f545 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f375455cbe204585b6132e7d54910aee.setIcon(icon_b65a519efc034b2ab2b7206dec54f545);
+            
+    
+            var popup_8e2416a9ae5c4e909210130c138be31f = L.popup({maxWidth: '300'});
+
+            
+                var html_a33930d30d184371bb2a1b4fbcaf98e9 = $('<div id="html_a33930d30d184371bb2a1b4fbcaf98e9" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_8e2416a9ae5c4e909210130c138be31f.setContent(html_a33930d30d184371bb2a1b4fbcaf98e9);
+            
+
+            marker_f375455cbe204585b6132e7d54910aee.bindPopup(popup_8e2416a9ae5c4e909210130c138be31f);
+
+            
+        
+    
+
+            var marker_95da9c5a2200445382c3ba01348b0678 = L.marker(
+                [44.0998001,-121.7710037],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_cd65b07c85a643fa84629a9008649511 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_95da9c5a2200445382c3ba01348b0678.setIcon(icon_cd65b07c85a643fa84629a9008649511);
+            
+    
+            var popup_425847b36e974c4a840cb1e66b1b5919 = L.popup({maxWidth: '300'});
+
+            
+                var html_aae057f87bb34eccb4b2dce1339fdb7e = $('<div id="html_aae057f87bb34eccb4b2dce1339fdb7e" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_425847b36e974c4a840cb1e66b1b5919.setContent(html_aae057f87bb34eccb4b2dce1339fdb7e);
+            
+
+            marker_95da9c5a2200445382c3ba01348b0678.bindPopup(popup_425847b36e974c4a840cb1e66b1b5919);
+
+            
+        
+    
+
+            var marker_32ce4169a82d4c528166feb26f821cd3 = L.marker(
+                [43.9788017,-121.6809998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_0fe2460c1c0a4cad9cd26985854d1f1b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_32ce4169a82d4c528166feb26f821cd3.setIcon(icon_0fe2460c1c0a4cad9cd26985854d1f1b);
+            
+    
+            var popup_e51516445ee9428192c6a015f1a5e5cf = L.popup({maxWidth: '300'});
+
+            
+                var html_8d07a216ea0c474db5e2ee12895bfdf6 = $('<div id="html_8d07a216ea0c474db5e2ee12895bfdf6" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_e51516445ee9428192c6a015f1a5e5cf.setContent(html_8d07a216ea0c474db5e2ee12895bfdf6);
+            
+
+            marker_32ce4169a82d4c528166feb26f821cd3.bindPopup(popup_e51516445ee9428192c6a015f1a5e5cf);
+
+            
+        
+    
+
+            var marker_5e8a366fa5aa473688f57d19fd8c8afa = L.marker(
+                [43.7218018,-121.2210007],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_0c141de07dd24478894c475623fefbd6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5e8a366fa5aa473688f57d19fd8c8afa.setIcon(icon_0c141de07dd24478894c475623fefbd6);
+            
+    
+            var popup_f927e8122a5b47b9907d067fd6beb894 = L.popup({maxWidth: '300'});
+
+            
+                var html_fbb1b191074446759e15419533f8d030 = $('<div id="html_fbb1b191074446759e15419533f8d030" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_f927e8122a5b47b9907d067fd6beb894.setContent(html_fbb1b191074446759e15419533f8d030);
+            
+
+            marker_5e8a366fa5aa473688f57d19fd8c8afa.bindPopup(popup_f927e8122a5b47b9907d067fd6beb894);
+
+            
+        
+    
+
+            var marker_71f396759eb64cadbc9b50b0d5b6f6c8 = L.marker(
+                [43.5698013,-121.8209991],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_d5834830a8814020abf0ee7da3780f27 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_71f396759eb64cadbc9b50b0d5b6f6c8.setIcon(icon_d5834830a8814020abf0ee7da3780f27);
+            
+    
+            var popup_01950faf23ac488abe52f8149214f161 = L.popup({maxWidth: '300'});
+
+            
+                var html_6ce7ac016e5641d686226e84b81ba4b4 = $('<div id="html_6ce7ac016e5641d686226e84b81ba4b4" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_01950faf23ac488abe52f8149214f161.setContent(html_6ce7ac016e5641d686226e84b81ba4b4);
+            
+
+            marker_71f396759eb64cadbc9b50b0d5b6f6c8.bindPopup(popup_01950faf23ac488abe52f8149214f161);
+
+            
+        
+    
+
+            var marker_e9c8938d4be645d4b95b26e35126b6f7 = L.marker(
+                [43.5119019,-120.8610001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_db2318b1ab184548b69e379d83460f1e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9c8938d4be645d4b95b26e35126b6f7.setIcon(icon_db2318b1ab184548b69e379d83460f1e);
+            
+    
+            var popup_861134425b9e4dd6a48c3b407d0017c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_50cbda26e789418b8ca653544371541f = $('<div id="html_50cbda26e789418b8ca653544371541f" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_861134425b9e4dd6a48c3b407d0017c3.setContent(html_50cbda26e789418b8ca653544371541f);
+            
+
+            marker_e9c8938d4be645d4b95b26e35126b6f7.bindPopup(popup_861134425b9e4dd6a48c3b407d0017c3);
+
+            
+        
+    
+
+            var marker_4e8b587b55494b2ba3ceee6983e6e5c3 = L.marker(
+                [43.240799,-122.1009979],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_1fbbf4d645a84cc9bd5a29abc21e8be5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4e8b587b55494b2ba3ceee6983e6e5c3.setIcon(icon_1fbbf4d645a84cc9bd5a29abc21e8be5);
+            
+    
+            var popup_43b3afd1ebda4f45ae2ead7140dbce40 = L.popup({maxWidth: '300'});
+
+            
+                var html_6009ec5c354449b4b3e409638d93ca04 = $('<div id="html_6009ec5c354449b4b3e409638d93ca04" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_43b3afd1ebda4f45ae2ead7140dbce40.setContent(html_6009ec5c354449b4b3e409638d93ca04);
+            
+
+            marker_4e8b587b55494b2ba3ceee6983e6e5c3.bindPopup(popup_43b3afd1ebda4f45ae2ead7140dbce40);
+
+            
+        
+    
+
+            var marker_0e17bcfa260e47bea5e84e10bdcbd056 = L.marker(
+                [43.4719009,-120.7509995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_bbd1c477cc28489990517c7ae9e4442f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0e17bcfa260e47bea5e84e10bdcbd056.setIcon(icon_bbd1c477cc28489990517c7ae9e4442f);
+            
+    
+            var popup_dac7832210544de39a9885aa0d53e320 = L.popup({maxWidth: '300'});
+
+            
+                var html_957a951d861c458ea3cb1ee6addbdf4e = $('<div id="html_957a951d861c458ea3cb1ee6addbdf4e" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_dac7832210544de39a9885aa0d53e320.setContent(html_957a951d861c458ea3cb1ee6addbdf4e);
+            
+
+            marker_0e17bcfa260e47bea5e84e10bdcbd056.bindPopup(popup_dac7832210544de39a9885aa0d53e320);
+
+            
+        
+    
+
+            var marker_2deb48ff560644d7bd44920a0333b98c = L.marker(
+                [43.3609009,-120.6610031],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_97ecd8ec8c8448918bf6e7a3ab79e885 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2deb48ff560644d7bd44920a0333b98c.setIcon(icon_97ecd8ec8c8448918bf6e7a3ab79e885);
+            
+    
+            var popup_53282f16a99e428ab49da9beb5d4012e = L.popup({maxWidth: '300'});
+
+            
+                var html_4b183b62b0564a49890bc13f67dd3d38 = $('<div id="html_4b183b62b0564a49890bc13f67dd3d38" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_53282f16a99e428ab49da9beb5d4012e.setContent(html_4b183b62b0564a49890bc13f67dd3d38);
+            
+
+            marker_2deb48ff560644d7bd44920a0333b98c.bindPopup(popup_53282f16a99e428ab49da9beb5d4012e);
+
+            
+        
+    
+
+            var marker_f9c81039ff274ffeb145e7f43e40d35f = L.marker(
+                [42.9299011,-122.1210022],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_6f70e7b2a6b1420c96b023c54e91c3e6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f9c81039ff274ffeb145e7f43e40d35f.setIcon(icon_6f70e7b2a6b1420c96b023c54e91c3e6);
+            
+    
+            var popup_500885b1041f44b59b39b021a7ba8dc2 = L.popup({maxWidth: '300'});
+
+            
+                var html_639dc1a6696743f29a9c83bbcc5b1ff4 = $('<div id="html_639dc1a6696743f29a9c83bbcc5b1ff4" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_500885b1041f44b59b39b021a7ba8dc2.setContent(html_639dc1a6696743f29a9c83bbcc5b1ff4);
+            
+
+            marker_f9c81039ff274ffeb145e7f43e40d35f.bindPopup(popup_500885b1041f44b59b39b021a7ba8dc2);
+
+            
+        
+    
+
+            var marker_f829bbd8c03e455fa3b4ef8534e17a1e = L.marker(
+                [44.4299011,-110.6709976],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_8c7acbb2a05049af8a383644c6d15d53 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f829bbd8c03e455fa3b4ef8534e17a1e.setIcon(icon_8c7acbb2a05049af8a383644c6d15d53);
+            
+    
+            var popup_444c4db5ec644c6bb604c016a3cd469b = L.popup({maxWidth: '300'});
+
+            
+                var html_5170d3e1dea843fd80a99c7bf75c9592 = $('<div id="html_5170d3e1dea843fd80a99c7bf75c9592" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_444c4db5ec644c6bb604c016a3cd469b.setContent(html_5170d3e1dea843fd80a99c7bf75c9592);
+            
+
+            marker_f829bbd8c03e455fa3b4ef8534e17a1e.bindPopup(popup_444c4db5ec644c6bb604c016a3cd469b);
+
+            
+        
+    
+
+            var marker_ec85490903184d68b6748f12b1094892 = L.marker(
+                [43.0998993,-118.7509995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_2531fb9c1af94741916315bba26ae46a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec85490903184d68b6748f12b1094892.setIcon(icon_2531fb9c1af94741916315bba26ae46a);
+            
+    
+            var popup_d0f82f1aa2da4808ae96b067a567e783 = L.popup({maxWidth: '300'});
+
+            
+                var html_10cc1e86414644168ede7538d3861da1 = $('<div id="html_10cc1e86414644168ede7538d3861da1" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_d0f82f1aa2da4808ae96b067a567e783.setContent(html_10cc1e86414644168ede7538d3861da1);
+            
+
+            marker_ec85490903184d68b6748f12b1094892.bindPopup(popup_d0f82f1aa2da4808ae96b067a567e783);
+
+            
+        
+    
+
+            var marker_e5c72b4f0a3e44d197d738ba504fefbc = L.marker(
+                [43.1498985,-117.4710007],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_5cc071b4b50b4c319062075933417ccf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e5c72b4f0a3e44d197d738ba504fefbc.setIcon(icon_5cc071b4b50b4c319062075933417ccf);
+            
+    
+            var popup_028f06b147c24290ae014b37705406e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_acee1213bc374b1d86e34fa0110be104 = $('<div id="html_acee1213bc374b1d86e34fa0110be104" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_028f06b147c24290ae014b37705406e2.setContent(html_acee1213bc374b1d86e34fa0110be104);
+            
+
+            marker_e5c72b4f0a3e44d197d738ba504fefbc.bindPopup(popup_028f06b147c24290ae014b37705406e2);
+
+            
+        
+    
+
+            var marker_2f99766e9cbb41ba90b7f4a8abc2f7dd = L.marker(
+                [42.9999008,-117.8010025],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_db82f3f893b24255bd57c4ee04c8ec7a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2f99766e9cbb41ba90b7f4a8abc2f7dd.setIcon(icon_db82f3f893b24255bd57c4ee04c8ec7a);
+            
+    
+            var popup_8af076a1a15b4dc8ae2d3b7cb8c8703c = L.popup({maxWidth: '300'});
+
+            
+                var html_5452fc82de1f4172a98997ddc7323d4c = $('<div id="html_5452fc82de1f4172a98997ddc7323d4c" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_8af076a1a15b4dc8ae2d3b7cb8c8703c.setContent(html_5452fc82de1f4172a98997ddc7323d4c);
+            
+
+            marker_2f99766e9cbb41ba90b7f4a8abc2f7dd.bindPopup(popup_8af076a1a15b4dc8ae2d3b7cb8c8703c);
+
+            
+        
+    
+
+            var marker_6742110586a54febafb37b2025e52cae = L.marker(
+                [43.419899,-113.5009995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_6a868bd3175842efa0faed7afc466f92 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6742110586a54febafb37b2025e52cae.setIcon(icon_6a868bd3175842efa0faed7afc466f92);
+            
+    
+            var popup_b11499af026a4d32bc6185b53f38b09b = L.popup({maxWidth: '300'});
+
+            
+                var html_5108e36fa7534017aff6de34639786c6 = $('<div id="html_5108e36fa7534017aff6de34639786c6" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_b11499af026a4d32bc6185b53f38b09b.setContent(html_5108e36fa7534017aff6de34639786c6);
+            
+
+            marker_6742110586a54febafb37b2025e52cae.bindPopup(popup_b11499af026a4d32bc6185b53f38b09b);
+
+            
+        
+    
+
+            var marker_221f3815884a42f3a84f50d3c5ddf91f = L.marker(
+                [43.4999008,-112.4509964],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_8e5ffc8a366a4a4d975044e49b5555d4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_221f3815884a42f3a84f50d3c5ddf91f.setIcon(icon_8e5ffc8a366a4a4d975044e49b5555d4);
+            
+    
+            var popup_d259d5dbdfa04ee088c19f0790429054 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a946aea8e46408f922d0085b4fdc5ab = $('<div id="html_8a946aea8e46408f922d0085b4fdc5ab" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_d259d5dbdfa04ee088c19f0790429054.setContent(html_8a946aea8e46408f922d0085b4fdc5ab);
+            
+
+            marker_221f3815884a42f3a84f50d3c5ddf91f.bindPopup(popup_d259d5dbdfa04ee088c19f0790429054);
+
+            
+        
+    
+
+            var marker_0cd777bfa7c140848d3cabb894a86f7c = L.marker(
+                [43.1799011,-114.3509979],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_a3d70da0786541d8b284951ffc805f66 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0cd777bfa7c140848d3cabb894a86f7c.setIcon(icon_a3d70da0786541d8b284951ffc805f66);
+            
+    
+            var popup_2e5b05b753e04690b47571edb806e3d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_ba4fb86c5e3d4d2f876101417db7c52a = $('<div id="html_ba4fb86c5e3d4d2f876101417db7c52a" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_2e5b05b753e04690b47571edb806e3d7.setContent(html_ba4fb86c5e3d4d2f876101417db7c52a);
+            
+
+            marker_0cd777bfa7c140848d3cabb894a86f7c.bindPopup(popup_2e5b05b753e04690b47571edb806e3d7);
+
+            
+        
+    
+
+            var marker_31ff5f8d18334fb8a32a2433ffe389a0 = L.marker(
+                [42.6058998,-117.5810013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_c67328512f774f96b2b613558d1f5960 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_31ff5f8d18334fb8a32a2433ffe389a0.setIcon(icon_c67328512f774f96b2b613558d1f5960);
+            
+    
+            var popup_744874575f414b32b2eb041d74b26a09 = L.popup({maxWidth: '300'});
+
+            
+                var html_dca67c67fd7a4d53891eeb17f2562caf = $('<div id="html_dca67c67fd7a4d53891eeb17f2562caf" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_744874575f414b32b2eb041d74b26a09.setContent(html_dca67c67fd7a4d53891eeb17f2562caf);
+            
+
+            marker_31ff5f8d18334fb8a32a2433ffe389a0.bindPopup(popup_744874575f414b32b2eb041d74b26a09);
+
+            
+        
+    
+
+            var marker_59104c9cde5b4bd5b4522aab7af59dbb = L.marker(
+                [41.5798988,-121.5709991],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_566a37d1489b48b0ac5b72a4c7005872 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_59104c9cde5b4bd5b4522aab7af59dbb.setIcon(icon_566a37d1489b48b0ac5b72a4c7005872);
+            
+    
+            var popup_ae46d84f38964eeeac7f4704f18dad40 = L.popup({maxWidth: '300'});
+
+            
+                var html_f493b179dd914bd3904475b98f6408ea = $('<div id="html_f493b179dd914bd3904475b98f6408ea" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_ae46d84f38964eeeac7f4704f18dad40.setContent(html_f493b179dd914bd3904475b98f6408ea);
+            
+
+            marker_59104c9cde5b4bd5b4522aab7af59dbb.bindPopup(popup_ae46d84f38964eeeac7f4704f18dad40);
+
+            
+        
+    
+
+            var marker_6d31fab65acf496c81a8ec7d62dcf6bc = L.marker(
+                [42.8799019,-113.2210007],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_ebe18d3820354fa7b7f707864a13cff3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6d31fab65acf496c81a8ec7d62dcf6bc.setIcon(icon_ebe18d3820354fa7b7f707864a13cff3);
+            
+    
+            var popup_b366082d90ef450c87242098346cc570 = L.popup({maxWidth: '300'});
+
+            
+                var html_e532c5233d6d4bcd99c6407404f4d4e0 = $('<div id="html_e532c5233d6d4bcd99c6407404f4d4e0" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_b366082d90ef450c87242098346cc570.setContent(html_e532c5233d6d4bcd99c6407404f4d4e0);
+            
+
+            marker_6d31fab65acf496c81a8ec7d62dcf6bc.bindPopup(popup_b366082d90ef450c87242098346cc570);
+
+            
+        
+    
+
+            var marker_1cddf14bba724d98b7b878869dc68002 = L.marker(
+                [41.419899,-122.2009964],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_434766836000401a825e478b308c0735 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1cddf14bba724d98b7b878869dc68002.setIcon(icon_434766836000401a825e478b308c0735);
+            
+    
+            var popup_2d22be575427460790704fb65223146e = L.popup({maxWidth: '300'});
+
+            
+                var html_f7474c27642a4641a47f7ee15e7a4da9 = $('<div id="html_f7474c27642a4641a47f7ee15e7a4da9" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_2d22be575427460790704fb65223146e.setContent(html_f7474c27642a4641a47f7ee15e7a4da9);
+            
+
+            marker_1cddf14bba724d98b7b878869dc68002.bindPopup(popup_2d22be575427460790704fb65223146e);
+
+            
+        
+    
+
+            var marker_0408efc6c93f4c9e81828cb5bd645206 = L.marker(
+                [41.1778984,-121.4410019],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_122d09ff70c04cd489001dcbc6f4a22a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0408efc6c93f4c9e81828cb5bd645206.setIcon(icon_122d09ff70c04cd489001dcbc6f4a22a);
+            
+    
+            var popup_cfad4d99528d4b428536bee5abded3a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_98bfa30e19af48a7ad93966d0fb3fa1a = $('<div id="html_98bfa30e19af48a7ad93966d0fb3fa1a" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_cfad4d99528d4b428536bee5abded3a7.setContent(html_98bfa30e19af48a7ad93966d0fb3fa1a);
+            
+
+            marker_0408efc6c93f4c9e81828cb5bd645206.bindPopup(popup_cfad4d99528d4b428536bee5abded3a7);
+
+            
+        
+    
+
+            var marker_f1b03912bf334ca19fdff7ef18c3894c = L.marker(
+                [40.9548988,-121.3610001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_b88e0af05e76476fa7884b0bc44bbe36 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f1b03912bf334ca19fdff7ef18c3894c.setIcon(icon_b88e0af05e76476fa7884b0bc44bbe36);
+            
+    
+            var popup_80f534250a89443096df59ab7474452a = L.popup({maxWidth: '300'});
+
+            
+                var html_b38042cc95da445db54b037b82787805 = $('<div id="html_b38042cc95da445db54b037b82787805" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_80f534250a89443096df59ab7474452a.setContent(html_b38042cc95da445db54b037b82787805);
+            
+
+            marker_f1b03912bf334ca19fdff7ef18c3894c.bindPopup(popup_80f534250a89443096df59ab7474452a);
+
+            
+        
+    
+
+            var marker_14007ae953fb491da73835ddccf334a6 = L.marker(
+                [40.7798996,-121.6009979],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_9bb5b46c70134dde84d323ac607eb3bd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_14007ae953fb491da73835ddccf334a6.setIcon(icon_9bb5b46c70134dde84d323ac607eb3bd);
+            
+    
+            var popup_004bfe74d26c4448b0faf329a83cbda2 = L.popup({maxWidth: '300'});
+
+            
+                var html_c809e361dc384cbd85622e0dc6b49ce4 = $('<div id="html_c809e361dc384cbd85622e0dc6b49ce4" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_004bfe74d26c4448b0faf329a83cbda2.setContent(html_c809e361dc384cbd85622e0dc6b49ce4);
+            
+
+            marker_14007ae953fb491da73835ddccf334a6.bindPopup(popup_004bfe74d26c4448b0faf329a83cbda2);
+
+            
+        
+    
+
+            var marker_f422e308d6bb4cb29afc52c5e33406d0 = L.marker(
+                [40.6799011,-121.5510025],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_b3379d93090f4a8889eb5d8cde1fe4c8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f422e308d6bb4cb29afc52c5e33406d0.setIcon(icon_b3379d93090f4a8889eb5d8cde1fe4c8);
+            
+    
+            var popup_c9d72b909ada42bca3d694ee20dc8ffb = L.popup({maxWidth: '300'});
+
+            
+                var html_8bb3be4aef8041a39cfac60bc3ded7c7 = $('<div id="html_8bb3be4aef8041a39cfac60bc3ded7c7" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_c9d72b909ada42bca3d694ee20dc8ffb.setContent(html_8bb3be4aef8041a39cfac60bc3ded7c7);
+            
+
+            marker_f422e308d6bb4cb29afc52c5e33406d0.bindPopup(popup_c9d72b909ada42bca3d694ee20dc8ffb);
+
+            
+        
+    
+
+            var marker_8d309e87bde2422b97fc35ca1ded3227 = L.marker(
+                [40.6299019,-120.8310013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_5c214aa361dd4ecdbbb35a07ef8c14e7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d309e87bde2422b97fc35ca1ded3227.setIcon(icon_5c214aa361dd4ecdbbb35a07ef8c14e7);
+            
+    
+            var popup_990069c5281843a0a19193f3057c7709 = L.popup({maxWidth: '300'});
+
+            
+                var html_5112ebadde0b438e8bfe0400d345ab91 = $('<div id="html_5112ebadde0b438e8bfe0400d345ab91" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_990069c5281843a0a19193f3057c7709.setContent(html_5112ebadde0b438e8bfe0400d345ab91);
+            
+
+            marker_8d309e87bde2422b97fc35ca1ded3227.bindPopup(popup_990069c5281843a0a19193f3057c7709);
+
+            
+        
+    
+
+            var marker_17107494f718492ab9a38022109f467e = L.marker(
+                [40.4919014,-121.5009995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_4f6be2e04a864d718f81afa5272f07af = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_17107494f718492ab9a38022109f467e.setIcon(icon_4f6be2e04a864d718f81afa5272f07af);
+            
+    
+            var popup_99ca15e8873d443f87b4f0853122767f = L.popup({maxWidth: '300'});
+
+            
+                var html_16d0c97a6224470fb7060ff6b7273d55 = $('<div id="html_16d0c97a6224470fb7060ff6b7273d55" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_99ca15e8873d443f87b4f0853122767f.setContent(html_16d0c97a6224470fb7060ff6b7273d55);
+            
+
+            marker_17107494f718492ab9a38022109f467e.bindPopup(popup_99ca15e8873d443f87b4f0853122767f);
+
+            
+        
+    
+
+            var marker_1134aa7d78434c32bc6c6554514b7ef2 = L.marker(
+                [38.9698982,-122.7710037],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_093574afa7124026a2dff5212c4b4a23 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1134aa7d78434c32bc6c6554514b7ef2.setIcon(icon_093574afa7124026a2dff5212c4b4a23);
+            
+    
+            var popup_3c0b71731e974fe2ac4c117c5b56fb2b = L.popup({maxWidth: '300'});
+
+            
+                var html_b59a906b20da42c194b13535c698e6f7 = $('<div id="html_b59a906b20da42c194b13535c698e6f7" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_3c0b71731e974fe2ac4c117c5b56fb2b.setContent(html_b59a906b20da42c194b13535c698e6f7);
+            
+
+            marker_1134aa7d78434c32bc6c6554514b7ef2.bindPopup(popup_3c0b71731e974fe2ac4c117c5b56fb2b);
+
+            
+        
+    
+
+            var marker_366c15f0948a45d3a35d09849dc6de9c = L.marker(
+                [39.3749008,-119.7210007],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_c7937710958249dbacd91e7687d84f23 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_366c15f0948a45d3a35d09849dc6de9c.setIcon(icon_c7937710958249dbacd91e7687d84f23);
+            
+    
+            var popup_475717bcbf3a4a3db41244a8a9f71490 = L.popup({maxWidth: '300'});
+
+            
+                var html_a23e1fa7df1443b8b1708999b3753600 = $('<div id="html_a23e1fa7df1443b8b1708999b3753600" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_475717bcbf3a4a3db41244a8a9f71490.setContent(html_a23e1fa7df1443b8b1708999b3753600);
+            
+
+            marker_366c15f0948a45d3a35d09849dc6de9c.bindPopup(popup_475717bcbf3a4a3db41244a8a9f71490);
+
+            
+        
+    
+
+            var marker_a594bc33ffcc4e87a307e6b50bc2a6db = L.marker(
+                [39.6500015,-107.0309982],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_d4d08018743b4aa5b1749da35305ee78 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a594bc33ffcc4e87a307e6b50bc2a6db.setIcon(icon_d4d08018743b4aa5b1749da35305ee78);
+            
+    
+            var popup_3322c5a07c5f4c2898cc6fb30158d006 = L.popup({maxWidth: '300'});
+
+            
+                var html_ff5eb31bcc0749bba3d7a4258327ce28 = $('<div id="html_ff5eb31bcc0749bba3d7a4258327ce28" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_3322c5a07c5f4c2898cc6fb30158d006.setContent(html_ff5eb31bcc0749bba3d7a4258327ce28);
+            
+
+            marker_a594bc33ffcc4e87a307e6b50bc2a6db.bindPopup(popup_3322c5a07c5f4c2898cc6fb30158d006);
+
+            
+        
+    
+
+            var marker_75dedd8d8d50423b9e528043c0f63146 = L.marker(
+                [37.9999008,-119.0309982],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_e8d5e9968c2f40d9afe20431870225e0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_75dedd8d8d50423b9e528043c0f63146.setIcon(icon_e8d5e9968c2f40d9afe20431870225e0);
+            
+    
+            var popup_c8f09ba240ce4670a34612c79af7f36a = L.popup({maxWidth: '300'});
+
+            
+                var html_da6b5e8095f848ee8d62012a7afd85f4 = $('<div id="html_da6b5e8095f848ee8d62012a7afd85f4" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_c8f09ba240ce4670a34612c79af7f36a.setContent(html_da6b5e8095f848ee8d62012a7afd85f4);
+            
+
+            marker_75dedd8d8d50423b9e528043c0f63146.bindPopup(popup_c8f09ba240ce4670a34612c79af7f36a);
+
+            
+        
+    
+
+            var marker_689f2b92545649bebe8a621013b600ac = L.marker(
+                [38.9700012,-112.5009995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_9a4b00426f964c2a9b3d0d007df6f310 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_689f2b92545649bebe8a621013b600ac.setIcon(icon_9a4b00426f964c2a9b3d0d007df6f310);
+            
+    
+            var popup_0e4cecd944ef4fe59347be5f50ab21f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_20199c0330b346e4b99e51029aabeb0a = $('<div id="html_20199c0330b346e4b99e51029aabeb0a" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_0e4cecd944ef4fe59347be5f50ab21f2.setContent(html_20199c0330b346e4b99e51029aabeb0a);
+            
+
+            marker_689f2b92545649bebe8a621013b600ac.bindPopup(popup_0e4cecd944ef4fe59347be5f50ab21f2);
+
+            
+        
+    
+
+            var marker_696ff2142dd844fba0c78eda92b16379 = L.marker(
+                [37.8799019,-119.0009995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_623c8983cf6e4c0a89d84e4e8fcc4ac4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_696ff2142dd844fba0c78eda92b16379.setIcon(icon_623c8983cf6e4c0a89d84e4e8fcc4ac4);
+            
+    
+            var popup_300418030704435bb0a44677ddd301e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_73184032bac74f52bf0caadafd6dbc36 = $('<div id="html_73184032bac74f52bf0caadafd6dbc36" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_300418030704435bb0a44677ddd301e9.setContent(html_73184032bac74f52bf0caadafd6dbc36);
+            
+
+            marker_696ff2142dd844fba0c78eda92b16379.bindPopup(popup_300418030704435bb0a44677ddd301e9);
+
+            
+        
+    
+
+            var marker_031cf48eb24944839672562c72adacb2 = L.marker(
+                [37.6918983,-119.0210037],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_59f8580430634b1781253585db0c8bde = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_031cf48eb24944839672562c72adacb2.setIcon(icon_59f8580430634b1781253585db0c8bde);
+            
+    
+            var popup_90977254dcff44898a18b8a978bfdca1 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a707230980a476880b3e520edde187d = $('<div id="html_6a707230980a476880b3e520edde187d" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_90977254dcff44898a18b8a978bfdca1.setContent(html_6a707230980a476880b3e520edde187d);
+            
+
+            marker_031cf48eb24944839672562c72adacb2.bindPopup(popup_90977254dcff44898a18b8a978bfdca1);
+
+            
+        
+    
+
+            var marker_800b6c0c9c4144cca711da76caa79837 = L.marker(
+                [37.6999016,-118.8710022],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_c36773d439af459cb8517cd7eb1a5579 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_800b6c0c9c4144cca711da76caa79837.setIcon(icon_c36773d439af459cb8517cd7eb1a5579);
+            
+    
+            var popup_3539c01c0804409787025d3bdad0bf87 = L.popup({maxWidth: '300'});
+
+            
+                var html_bf2e75e2230a4a959d7c74cf9e26aed6 = $('<div id="html_bf2e75e2230a4a959d7c74cf9e26aed6" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_3539c01c0804409787025d3bdad0bf87.setContent(html_bf2e75e2230a4a959d7c74cf9e26aed6);
+            
+
+            marker_800b6c0c9c4144cca711da76caa79837.bindPopup(popup_3539c01c0804409787025d3bdad0bf87);
+
+            
+        
+    
+
+            var marker_055987ce253e48f3ab9886eec8d1c643 = L.marker(
+                [37.5798988,-119.0510025],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_3d7501fa79d9448186d0129298283f85 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_055987ce253e48f3ab9886eec8d1c643.setIcon(icon_3d7501fa79d9448186d0129298283f85);
+            
+    
+            var popup_8e3ee704bb4645cf97f18712c38ff1de = L.popup({maxWidth: '300'});
+
+            
+                var html_0354f5310464494d875482adefe53197 = $('<div id="html_0354f5310464494d875482adefe53197" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_8e3ee704bb4645cf97f18712c38ff1de.setContent(html_0354f5310464494d875482adefe53197);
+            
+
+            marker_055987ce253e48f3ab9886eec8d1c643.bindPopup(popup_8e3ee704bb4645cf97f18712c38ff1de);
+
+            
+        
+    
+
+            var marker_2db2784ee43f48dd8da121fb6b4691d5 = L.marker(
+                [37.0199013,-117.4509964],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_11ea7ebf1c1b4791ad3960701ae5202a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2db2784ee43f48dd8da121fb6b4691d5.setIcon(icon_11ea7ebf1c1b4791ad3960701ae5202a);
+            
+    
+            var popup_4565754649924df889b583e21a10df0c = L.popup({maxWidth: '300'});
+
+            
+                var html_1e3eef0cd4874459a04a478688f99623 = $('<div id="html_1e3eef0cd4874459a04a478688f99623" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_4565754649924df889b583e21a10df0c.setContent(html_1e3eef0cd4874459a04a478688f99623);
+            
+
+            marker_2db2784ee43f48dd8da121fb6b4691d5.bindPopup(popup_4565754649924df889b583e21a10df0c);
+
+            
+        
+    
+
+            var marker_796919584e09428383dbebdc07765c7f = L.marker(
+                [37.5800018,-112.6709976],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_99729d6ba3be41f19b711fdd37093750 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_796919584e09428383dbebdc07765c7f.setIcon(icon_99729d6ba3be41f19b711fdd37093750);
+            
+    
+            var popup_6613d27b5e794204be4e5f39be72eafe = L.popup({maxWidth: '300'});
+
+            
+                var html_4f61287dfd2c42abb2d8bd097b383040 = $('<div id="html_4f61287dfd2c42abb2d8bd097b383040" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_6613d27b5e794204be4e5f39be72eafe.setContent(html_4f61287dfd2c42abb2d8bd097b383040);
+            
+
+            marker_796919584e09428383dbebdc07765c7f.bindPopup(popup_6613d27b5e794204be4e5f39be72eafe);
+
+            
+        
+    
+
+            var marker_b0b7a3dfc911461f8dd8ea5da3a8cc51 = L.marker(
+                [37.257,-113.6210022],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_db0ef640303c4226907d9f176339abb0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b0b7a3dfc911461f8dd8ea5da3a8cc51.setIcon(icon_db0ef640303c4226907d9f176339abb0);
+            
+    
+            var popup_675bcfda8dc24ae9a64ceb93d148539f = L.popup({maxWidth: '300'});
+
+            
+                var html_360bb8edf0a04c6b81b17205617149dd = $('<div id="html_360bb8edf0a04c6b81b17205617149dd" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_675bcfda8dc24ae9a64ceb93d148539f.setContent(html_360bb8edf0a04c6b81b17205617149dd);
+            
+
+            marker_b0b7a3dfc911461f8dd8ea5da3a8cc51.bindPopup(popup_675bcfda8dc24ae9a64ceb93d148539f);
+
+            
+        
+    
+
+            var marker_04e4c4dbf9d54c9c8458dee51caf2e9b = L.marker(
+                [37.3279991,-112.401001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_622a7357b7094b369b46b22c3ceb97d0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_04e4c4dbf9d54c9c8458dee51caf2e9b.setIcon(icon_622a7357b7094b369b46b22c3ceb97d0);
+            
+    
+            var popup_758397d1a76a4915a3d73e3dc6fe2e67 = L.popup({maxWidth: '300'});
+
+            
+                var html_977a29573d284bb5ada4dbad1e9fcee8 = $('<div id="html_977a29573d284bb5ada4dbad1e9fcee8" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_758397d1a76a4915a3d73e3dc6fe2e67.setContent(html_977a29573d284bb5ada4dbad1e9fcee8);
+            
+
+            marker_04e4c4dbf9d54c9c8458dee51caf2e9b.bindPopup(popup_758397d1a76a4915a3d73e3dc6fe2e67);
+
+            
+        
+    
+
+            var marker_b859ea1afef74114bbd1b855384a19d0 = L.marker(
+                [36.3578987,-118.3209991],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_835d4fe7af974273ab3fb35161a10116 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b859ea1afef74114bbd1b855384a19d0.setIcon(icon_835d4fe7af974273ab3fb35161a10116);
+            
+    
+            var popup_45e6dbef13d64baf9d41cea1a3a76bb1 = L.popup({maxWidth: '300'});
+
+            
+                var html_3941480651aa4c9d85d81c3642710c17 = $('<div id="html_3941480651aa4c9d85d81c3642710c17" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_45e6dbef13d64baf9d41cea1a3a76bb1.setContent(html_3941480651aa4c9d85d81c3642710c17);
+            
+
+            marker_b859ea1afef74114bbd1b855384a19d0.bindPopup(popup_45e6dbef13d64baf9d41cea1a3a76bb1);
+
+            
+        
+    
+
+            var marker_68ec10033c29476dbae09f0084a7b2a5 = L.marker(
+                [36.0298996,-117.8209991],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_b85d823c26ee467ab09114ea44a941b5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_68ec10033c29476dbae09f0084a7b2a5.setIcon(icon_b85d823c26ee467ab09114ea44a941b5);
+            
+    
+            var popup_68f7bdaa981f4f55a76ca9c6aa65b1ec = L.popup({maxWidth: '300'});
+
+            
+                var html_cf18575bde4a4a4c853e1076756a1359 = $('<div id="html_cf18575bde4a4a4c853e1076756a1359" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_68f7bdaa981f4f55a76ca9c6aa65b1ec.setContent(html_cf18575bde4a4a4c853e1076756a1359);
+            
+
+            marker_68ec10033c29476dbae09f0084a7b2a5.bindPopup(popup_68f7bdaa981f4f55a76ca9c6aa65b1ec);
+
+            
+        
+    
+
+            var marker_90c179b3c4d5475487cf60aa49bc714f = L.marker(
+                [36.3800011,-113.1309967],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_ba468545c1b54484b2d836ae62b85ab9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_90c179b3c4d5475487cf60aa49bc714f.setIcon(icon_ba468545c1b54484b2d836ae62b85ab9);
+            
+    
+            var popup_172588506f1e4b869d98ee7e3ecf3974 = L.popup({maxWidth: '300'});
+
+            
+                var html_b70caa15d12e455d8cb11cdd266214de = $('<div id="html_b70caa15d12e455d8cb11cdd266214de" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_172588506f1e4b869d98ee7e3ecf3974.setContent(html_b70caa15d12e455d8cb11cdd266214de);
+            
+
+            marker_90c179b3c4d5475487cf60aa49bc714f.bindPopup(popup_172588506f1e4b869d98ee7e3ecf3974);
+
+            
+        
+    
+
+            var marker_1a4c410600c543c9aaca85b75a7dd461 = L.marker(
+                [34.75,-116.6210022],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_26e68164704341b581596c5d5e2bcad0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1a4c410600c543c9aaca85b75a7dd461.setIcon(icon_26e68164704341b581596c5d5e2bcad0);
+            
+    
+            var popup_395a95688bfc435ebcef379a40738cb0 = L.popup({maxWidth: '300'});
+
+            
+                var html_84d5fa871c5040b89cf905ea156c3a99 = $('<div id="html_84d5fa871c5040b89cf905ea156c3a99" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_395a95688bfc435ebcef379a40738cb0.setContent(html_84d5fa871c5040b89cf905ea156c3a99);
+            
+
+            marker_1a4c410600c543c9aaca85b75a7dd461.bindPopup(popup_395a95688bfc435ebcef379a40738cb0);
+
+            
+        
+    
+
+            var marker_97b2c6d724ef497c9a40c4178b5e10a2 = L.marker(
+                [35.8699989,-106.5709991],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_4b0bfcff753046dca0acafb1eac560d9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_97b2c6d724ef497c9a40c4178b5e10a2.setIcon(icon_4b0bfcff753046dca0acafb1eac560d9);
+            
+    
+            var popup_bdaf3d079e664808860c06705f3068e7 = L.popup({maxWidth: '300'});
+
+            
+                var html_ab6688e471bd4f8f82d1001750ca32dc = $('<div id="html_ab6688e471bd4f8f82d1001750ca32dc" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_bdaf3d079e664808860c06705f3068e7.setContent(html_ab6688e471bd4f8f82d1001750ca32dc);
+            
+
+            marker_97b2c6d724ef497c9a40c4178b5e10a2.bindPopup(popup_bdaf3d079e664808860c06705f3068e7);
+
+            
+        
+    
+
+            var marker_b5ec8957566b4f3e8da2c15631b5f6bd = L.marker(
+                [35.3699989,-111.5009995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_61f2d67b3fa84a05b85ce679afbaf44e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b5ec8957566b4f3e8da2c15631b5f6bd.setIcon(icon_61f2d67b3fa84a05b85ce679afbaf44e);
+            
+    
+            var popup_978e7a95ed3b409980f17b3fac6af379 = L.popup({maxWidth: '300'});
+
+            
+                var html_5ee07e9f32204c4a90e3aca4ae5b256c = $('<div id="html_5ee07e9f32204c4a90e3aca4ae5b256c" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_978e7a95ed3b409980f17b3fac6af379.setContent(html_5ee07e9f32204c4a90e3aca4ae5b256c);
+            
+
+            marker_b5ec8957566b4f3e8da2c15631b5f6bd.bindPopup(popup_978e7a95ed3b409980f17b3fac6af379);
+
+            
+        
+    
+
+            var marker_a02bb73fdce5427197d50d0b24e89c3a = L.marker(
+                [34.5499992,-115.7809982],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_d1f9ad3edca8492f8a268e599193079f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a02bb73fdce5427197d50d0b24e89c3a.setIcon(icon_d1f9ad3edca8492f8a268e599193079f);
+            
+    
+            var popup_b1585053e2544780ae0cb9db8dc1e557 = L.popup({maxWidth: '300'});
+
+            
+                var html_5e49c98826e847c5a7f53760ecaf5341 = $('<div id="html_5e49c98826e847c5a7f53760ecaf5341" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_b1585053e2544780ae0cb9db8dc1e557.setContent(html_5e49c98826e847c5a7f53760ecaf5341);
+            
+
+            marker_a02bb73fdce5427197d50d0b24e89c3a.bindPopup(popup_b1585053e2544780ae0cb9db8dc1e557);
+
+            
+        
+    
+
+            var marker_d4a5b12899664bdda9195f4ae7152ac9 = L.marker(
+                [34.7999992,-108.0009995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_e5d81df9d4ab48a78afc20db872262fa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4a5b12899664bdda9195f4ae7152ac9.setIcon(icon_e5d81df9d4ab48a78afc20db872262fa);
+            
+    
+            var popup_da95c95960a249be8bc7feddf9b52f7c = L.popup({maxWidth: '300'});
+
+            
+                var html_9acfe065947a4758b4b4d62f932cdaa3 = $('<div id="html_9acfe065947a4758b4b4d62f932cdaa3" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_da95c95960a249be8bc7feddf9b52f7c.setContent(html_9acfe065947a4758b4b4d62f932cdaa3);
+            
+
+            marker_d4a5b12899664bdda9195f4ae7152ac9.bindPopup(popup_da95c95960a249be8bc7feddf9b52f7c);
+
+            
+        
+    
+
+            var marker_dab893bd300a4175bf5f2a4f900dae77 = L.marker(
+                [33.7801018,-105.9309998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0f31560177da4f308d0b9402a972e8bf);
+            
+    
+
+                var icon_5217e3006db34ac7b889e6686fd6a0a3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dab893bd300a4175bf5f2a4f900dae77.setIcon(icon_5217e3006db34ac7b889e6686fd6a0a3);
+            
+    
+            var popup_7dc4dbdf451648c281005e2462af5028 = L.popup({maxWidth: '300'});
+
+            
+                var html_0232061c1b3a4b44914303e70129455b = $('<div id="html_0232061c1b3a4b44914303e70129455b" style="width: 100.0%; height: 100.0%;">Volcano Marker</div>')[0];
+                popup_7dc4dbdf451648c281005e2462af5028.setContent(html_0232061c1b3a4b44914303e70129455b);
+            
+
+            marker_dab893bd300a4175bf5f2a4f900dae77.bindPopup(popup_7dc4dbdf451648c281005e2462af5028);
+
+            
+        
+</script>
