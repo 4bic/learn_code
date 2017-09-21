@@ -19,20 +19,29 @@ def elevate_color(elevation):
 # create base map
 map = folium.Map(location=[ 38.58, -99.09], zoom_start=3, tiles="Mapbox Bright")
 # utilize a feature group object to add multiple features
-fg = folium.FeatureGroup(name="US Volcanoes")
+# Volcanoes layer
+fgv = folium.FeatureGroup(name="US Volcanoes")
 
 # iterate over the data file and use location data
 for lt, ln, el,nm in zip(latitude,longitude, elevation, marker_name):
     # add a each marker
-    fg.add_child(folium.CircleMarker(location=[lt, ln], radius = 6, popup=str(el)+" m",
+    fgv.add_child(folium.CircleMarker(location=[lt, ln], radius = 6, popup=str(el)+" m",
     fill_color=elevate_color(el), color = 'grey', fill_opacity=0.7))
 
 
-fg.add_child(folium.GeoJson(data=open('world.json', 'r', encoding="utf-8-sig"),
+# Population layer
+fgp = folium.FeatureGroup(name="World Population")
+
+fgp.add_child(folium.GeoJson(data=open('world.json', 'r', encoding="utf-8-sig"),
 style_function=lambda x: {'fillColor':'green' if x['properties']['POP2005'] < 10000000
 else 'orange' if 10000000 <= x['properties']['POP2005'] < 20000000 else 'red'}))
 
-map.add_child(fg)
+
+
+map.add_child(fgv)
+map.add_child(fgp)
+# adding Layer Control
+map.add_child(folium.LayerControl())
 
 # save genarated map
 map.save("volcanoes.html")
