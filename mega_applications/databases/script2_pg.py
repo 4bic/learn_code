@@ -17,7 +17,7 @@ def insert(item,quantity,price):
     # create a cursor object
     cur=conn.cursor()
     # add data
-    cur.execute("INSERT INTO store VALUES('%s','%s','%s')" %(item,quantity,price))
+    cur.execute("INSERT INTO store VALUES(%s,%s,%s)",(item,quantity,price))
     # commit to db
     conn.commit()
     conn.close()
@@ -30,13 +30,13 @@ def view():
     conn.close()
     return rows
 
-# def delete(item):
-#     conn = psycopg2.connect("mega_app")
-#     cur=conn.cursor()
-#     cur.execute("DELETE FROM store WHERE item=?",(item,))
-#     conn.commit()
-#     conn.close()
-#
+def delete(item):
+    conn = psycopg2.connect(dbname='mega_app', user='4bic',password='postgres', host='localhost', port='5432')
+    cur=conn.cursor()
+    cur.execute("DELETE FROM store WHERE item=%s",(item,))
+    conn.commit()
+    conn.close()
+
 # def update(quantity,price,item):
 #     conn = psycopg2.connect("mega_app")
 #     cur=conn.cursor()
@@ -44,6 +44,7 @@ def view():
 #     conn.commit()
 #     conn.close()
 
-create_table()
-insert("Wheat", 50, 30)
-# print (view())
+# create_table()
+# insert("Mangoes", 50, 130)
+delete("Apple")
+print (view())
