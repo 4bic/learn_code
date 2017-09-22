@@ -37,14 +37,15 @@ def delete(item):
     conn.commit()
     conn.close()
 
-# def update(quantity,price,item):
-#     conn = psycopg2.connect("mega_app")
-#     cur=conn.cursor()
-#     cur.execute("UPDATE store SET quantity=?, price=? WHERE item=?",(quantity,price,item))
-#     conn.commit()
-#     conn.close()
+def update(quantity,price,item):
+    conn = psycopg2.connect(dbname='mega_app', user='4bic',password='postgres', host='localhost', port='5432')
+    cur=conn.cursor()
+    cur.execute("UPDATE store SET quantity=%s, price=%s WHERE item=%s",(quantity,price,item))
+    conn.commit()
+    conn.close()
 
 # create_table()
 # insert("Mangoes", 50, 130)
-delete("Apple")
+# delete("Apple")
+# update(86,75,'Oranges')
 print (view())
