@@ -30,6 +30,9 @@ def add_entry_command():
     list1.delete(0,END)
     list1.insert(END,(title_text.get(),author_text.get(),year_text.get(),isbn_text.get()))
 
+def update_command():
+    backend.update(selected_tuple[0],title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
+
 def delete_command():
     backend.delete(selected_tuple[0])
 
@@ -88,13 +91,13 @@ b2.grid(row=3,column=3)
 b3=Button(window,text="Add Entry",width=12,command=add_entry_command)
 b3.grid(row=4,column=3)
 
-b4=Button(window,text="Update",width=12)
+b4=Button(window,text="Update",width=12,command=update_command)
 b4.grid(row=5,column=3)
 
 b5=Button(window,text="Delete",width=12,command=delete_command)
 b5.grid(row=6,column=3)
 
-b6=Button(window,text="Close",width=12)
+b6=Button(window,text="Close",width=12,command=window.destroy)
 b6.grid(row=7,column=3)
 
 
