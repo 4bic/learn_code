@@ -38,6 +38,7 @@ def delete_command():
 
 
 window=Tk()
+window.wm_title("BookStore Widget")
 # Book labels
 l1=Label(window,text='Title')
 l1.grid(row=0,column=0)
