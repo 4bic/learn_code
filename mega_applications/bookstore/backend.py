@@ -44,5 +44,5 @@ def update(id,title,author,year,isbn):
     conn.commit()
     conn.close()
 
-# connect to db everytime frontend is initiated    
+# connect to db everytime frontend is initiated
 connect()

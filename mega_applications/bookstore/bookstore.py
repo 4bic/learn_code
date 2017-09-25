@@ -5,7 +5,14 @@ def get_selected_row(event):
     global selected_tuple
     index=list1.curselection()[0]
     selected_tuple=list1.get(index)
-
+    e1.delete(0,END)
+    e1.insert(END,selected_tuple[1])
+    e2.delete(0,END)
+    e2.insert(END,selected_tuple[2])
+    e3.delete(0,END)
+    e3.insert(END,selected_tuple[3])
+    e4.delete(0,END)
+    e4.insert(END,selected_tuple[3])
 
 def view_command():
     list1.delete(0,END)
@@ -19,8 +26,8 @@ def search_command():
         list1.insert(END,row)
 
 def add_entry_command():
-    list1.delete(0,END)
     backend.insert(title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
+    list1.delete(0,END)
     list1.insert(END,(title_text.get(),author_text.get(),year_text.get(),isbn_text.get()))
 
 def delete_command():
