@@ -17,15 +17,17 @@ class Account(object):
             file.write(str(self.balance))
 
 
+class Checking(Account):
+    """checking_acc. inherits functions from
+    the Account Class
+    """
+    def __init__(self, filepath):
+        Account.__init__(self, filepath)
+
+    def transfer(self, amount):
+        self.balance = self.balance - amount
 
 
-
-
-
-account=Account("balance.txt")
-print (account.balance)
-account.withdraw(150)
-print (account.balance)
-account.deposit(1150)
-print (account.balance)
-account.commit()
+checking= Checking("balance.txt")
+checking.transfer(300)
+print(checking.balance)
