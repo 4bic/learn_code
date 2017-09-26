@@ -1,0 +1,3 @@
+([('bookstore',
+   '/Users/4bic/projects/data_school/mega_applications/oop_bookstore/dist/bookstore',
+   'EXECUTABLE')],)
