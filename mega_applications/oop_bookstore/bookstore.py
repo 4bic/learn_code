@@ -74,14 +74,14 @@ class Window():
         global selected_tuple
         index=self.list1.curselection()[0]
         selected_tuple=self.list1.get(index)
-        e1.delete(0,END)
-        e1.insert(END,selected_tuple[1])
-        e2.delete(0,END)
-        e2.insert(END,selected_tuple[2])
-        e3.delete(0,END)
-        e3.insert(END,selected_tuple[3])
-        e4.delete(0,END)
-        e4.insert(END,selected_tuple[3])
+        self.e1.delete(0,END)
+        self.e1.insert(END,selected_tuple[1])
+        self.e2.delete(0,END)
+        self.e2.insert(END,selected_tuple[2])
+        self.e3.delete(0,END)
+        self.e3.insert(END,selected_tuple[3])
+        self.e4.delete(0,END)
+        self.e4.insert(END,selected_tuple[3])
 
     def view_command(self):
         self.list1.delete(0,END)
@@ -89,18 +89,18 @@ class Window():
             self.list1.insert(END,row)
 
     def search_command(self):
-        list1.delete(0,END)
-        for row in database.search(title_text.get(),
-        author_text.get(),year_text.get(),isbn_text.get()):
-            list1.insert(END,row)
+        self.list1.delete(0,END)
+        for row in database.search(self.title_text.get(),
+        self.author_text.get(),self.year_text.get(),self.isbn_text.get()):
+            self.list1.insert(END,row)
 
     def add_entry_command(self):
-        database.insert(title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
-        list1.delete(0,END)
-        list1.insert(END,(title_text.get(),author_text.get(),year_text.get(),isbn_text.get()))
+        database.insert(self.title_text.get(),self.author_text.get(),self.year_text.get(),self.isbn_text.get())
+        self.list1.delete(0,END)
+        self.list1.insert(END,(self.title_text.get(),self.author_text.get(),self.year_text.get(),self.isbn_text.get()))
 
     def update_command(self):
-        database.update(selected_tuple[0],title_text.get(),author_text.get(),year_text.get(),isbn_text.get())
+        database.update(selected_tuple[0],self.title_text.get(),self.author_text.get(),self.year_text.get(),self.isbn_text.get())
 
     def delete_command(self):
         database.delete(selected_tuple[0])
