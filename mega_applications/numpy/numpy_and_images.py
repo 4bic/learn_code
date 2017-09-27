@@ -51,8 +51,23 @@ ims_v = np.vstack((im_g, im_g, im_g))
 #  [209 134 255  97 182]]
 #
 # # splitting Horizontally
-lst = np.hsplit(ims_h,3)
-# print lst
+lst_h = np.hsplit(ims_h,3)
+# print lst_h
+# [array([[187, 158, 104, 121, 143],
+#        [198, 125, 255, 255, 147],
+#        [209, 134, 255,  97, 182]], dtype=uint8),
+#
+# array([[187, 158, 104,121, 143],
+#        [198, 125, 255, 255, 147],
+#        [209, 134, 255,  97, 182]], dtype=uint8),
+#
+# array([[187, 158, 104,121, 143],
+#        [198, 125, 255, 255, 147],
+#        [209, 134, 255,  97, 182]], dtype=uint8)]
+
+# # splitting vertically
+lst_v = np.vsplit(ims_v,3)
+# print lst_v
 # [array([[187, 158, 104, 121, 143],
 #        [198, 125, 255, 255, 147],
 #        [209, 134, 255,  97, 182]], dtype=uint8),
