@@ -32,3 +32,6 @@ for i in im_g.flat:
 # stacking numpy arrays
 #Horizontally
 ims = numpy.hstack((im_g,im_g)) #tuple of arrays
+
+# stacking vertically
+ims = numpy.vstack((im_g, im_g, im_g))
