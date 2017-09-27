@@ -28,3 +28,7 @@ for i in im_g:
 # value for value
 for i in im_g.flat:
     print (i)
+
+# stacking numpy arrays
+#Horizontally
+ims = numpy.hstack((im_g,im_g)) #tuple of arrays
