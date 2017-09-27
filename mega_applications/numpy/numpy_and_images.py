@@ -1,6 +1,6 @@
-import numpy
-import pandas as np
+import numpy as np
+import pandas as pd
 
-n = numpy.arange(27)
+n = np.arange(27)
 
-print n.reshape(3, 9)
+print n.reshape(3, 3, 3)
