@@ -2,7 +2,7 @@ import cv2
 
 # read image
 #   0-grayscale, 1-BGR , -1 >color with transparency
-img = cv2.imread("galaxy.jpg", 0)
+img = cv2.imread("resource/galaxy.jpg", 0)
 
 # print (type(img))
 # <type 'numpy.ndarray'>
@@ -22,7 +22,7 @@ resized_img = cv2.resize(img,(int(img.shape[1]/2),int(img.shape[0]/2)))
 # show image on a window
 cv2.imshow('GALAXy', resized_img)
 # save image to file
-cv2.imwrite('resized_galaxy.png', resized_img)
+cv2.imwrite('resource/resized_galaxy.png', resized_img)
 # time to close window
 cv2.waitKey(2000)
 # action to be taken once the window is clicked
