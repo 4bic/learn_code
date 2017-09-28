@@ -12,7 +12,7 @@ gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # store width and height values of face
 faces = face_cascade.detectMultiScale(gray_img,
 # once checked, reduce image by 5%
-scaleFactor=1.05,
+scaleFactor=1.1,
 # how many cells to be checked aroung the window
 minNeighbors=5)
 
