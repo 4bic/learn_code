@@ -19,6 +19,9 @@ minNeighbors=5)
 for x, y, w, h in faces:
     img = cv2.rectangle(img, (x,y),(x+w, y+h),(0,255,0), 3)
 
-cv2.imshow("Gray", img)
+# resize incase of large images
+resized_img = cv2.resize(img, ((int(img.shape[1]/3)), (int(img.shape[0]/3))))
+cv2.imshow("Gray", resized_img)
+cv2.imwrite('resource/resized_face.png', resized_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
