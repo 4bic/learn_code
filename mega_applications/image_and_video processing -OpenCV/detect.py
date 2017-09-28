@@ -16,11 +16,12 @@ img = cv2.imread("galaxy.jpg", 0)
 #  [ 1  1  1 ...,  1  1  3]]
 
 # resize img to fit window
-resized_img = cv2.resize(img,(300, 600))
+# divide by half size from original shape
+resized_img = cv2.resize(img,(int(img.shape[1]/2),int(img.shape[0]/2)))
 
 # show image on a window
 cv2.imshow('GALAXy', resized_img)
 # time to close window
-cv2.waitKey(2000)
+cv2.waitKey(5000)
 # action to be taken once the window is clicked
 cv2.destroyAllWindows()
