@@ -19,10 +19,14 @@ while True:
     # compare first_frame and current frame
     delta_frame = cv2.absdiff(first_frame,gray_img)
 
+    # threshold - classify the difference values of the pixels 
+    thresh_frame = cv2.threshold(delta_frame, 30, 255, cv2.THRESH_BINARY)[1]
     # display window
     cv2.imshow("Video Capturing", gray_img)
     # period window to stay active
     cv2.imshow("Delta Frame",delta_frame)
+
+    cv2.imshow("thresh frame", thresh_frame)
 
     key = cv2.waitKey(1)
     if key==ord('q'):
