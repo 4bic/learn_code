@@ -7,20 +7,24 @@ video=cv2.VideoCapture(0)# 0-built in cam, 1-external cam
 
 while True:
     # create frame to read images captures by cam
-    check, frame= video.read()
+    check, frame = video.read()
     # convert image to grayscale
     gray_img = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-    # check confirms video is running
+    # blur frame to remove noise and increase accuracy
+    gray_img= cv2.GaussianBlur(gray_img,(21,21),0)
 
     if first_frame is None:
         first_frame = gray_img
         continue
-            
+    # compare first_frame and current frame
+    delta_frame = cv2.absdiff(first_frame,gray_img)
+
     # display window
     cv2.imshow("Video Capturing", gray_img)
     # period window to stay active
-    key = cv2.waitKey(1)
+    cv2.imshow("Delta Frame",delta_frame)
 
+    key = cv2.waitKey(1)
     if key==ord('q'):
         break
 
