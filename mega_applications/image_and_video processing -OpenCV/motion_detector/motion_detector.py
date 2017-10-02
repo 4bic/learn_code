@@ -1,13 +1,18 @@
 import cv2,time
+from datetime import datetime
 
 # capture frames
 first_frame = None
+status_list = []
+times = []
 # capture video
 video=cv2.VideoCapture(0)# 0-built in cam, 1-external cam
 
 while True:
     # create frame to read images captures by cam
     check, frame = video.read()
+
+    status = 0
     # convert image to grayscale
     gray_img = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
     # blur frame to remove noise and increase accuracy
@@ -29,12 +34,19 @@ while True:
     for contour in cnts:
         if cv2.contourArea(contour) < 1000:
             continue
+        status = 1
 
         (x,y,w,h)=cv2.boundingRect(contour)
         # draw rectangle around the contour
         cv2.rectangle(frame, (x,y), (x+w, y+h),(0, 255, 0), 3)
+    status_list.append(status)
+    if status_list[-1] == 1 and status_list[-2] == 0:
+        times.append(datetime.now())
 
+    if status_list[-1] == 0 and status_list[-2] == 1:
+        times.append(datetime.now())
 
+    
     # display window
     cv2.imshow("Video Capturing", gray_img)
     # period window to stay active
@@ -48,6 +60,7 @@ while True:
     if key==ord('q'):
         break
 
+    print status_list
 # release video.camera
 video.release()
 # destroy all open windows
