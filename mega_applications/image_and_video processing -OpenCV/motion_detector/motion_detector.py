@@ -1,10 +1,12 @@
 import cv2,time
 from datetime import datetime
+import pandas
 
 # capture frames
 first_frame = None
-status_list = []
-times = []
+status_list = [None, None]
+times=[]
+df=pandas.DataFrame(columns=["Start","End"])
 # capture video
 video=cv2.VideoCapture(0)# 0-built in cam, 1-external cam
 
@@ -40,13 +42,13 @@ while True:
         # draw rectangle around the contour
         cv2.rectangle(frame, (x,y), (x+w, y+h),(0, 255, 0), 3)
     status_list.append(status)
-    if status_list[-1] == 1 and status_list[-2] == 0:
+
+    if status_list[-1]==1 and status_list[-2]==0:
         times.append(datetime.now())
 
-    if status_list[-1] == 0 and status_list[-2] == 1:
+    if status_list[-1]==0 and status_list[-2]==1:
         times.append(datetime.now())
 
-    
     # display window
     cv2.imshow("Video Capturing", gray_img)
     # period window to stay active
@@ -58,9 +60,17 @@ while True:
 
     key = cv2.waitKey(1)
     if key==ord('q'):
+        if status==1:
+            times.append(datetime.now())
         break
 
     print status_list
+    print times
+    # append time values into pandas DataFrame
+for i in range(0,len(times),2):
+    df=df.append({"Start":times[i],"End":times[i+1]},ignore_index=True)
+df.to_csv("times.csv")
+
 # release video.camera
 video.release()
 # destroy all open windows
