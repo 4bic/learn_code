@@ -21,7 +21,15 @@ while True:
     # threshold - classify the difference values of the pixels
     thresh_frame = cv2.threshold(delta_frame, 30, 255, cv2.THRESH_BINARY)[1]
     # remove black holes, smoothen threshold
-    thresh_frame=cv2.dilate(thresh_frame, None, iterations=1)
+    thresh_frame=cv2.dilate(thresh_frame, None, iterations=2)
+    # find contours
+    (_,cnts,_)=cv2.findContours(thresh_frame.copy(),cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    # filter out contours with less than 1000 pixels
+    for contour in cnts:
+        if cv2.contourArea(contour) < 1000:
+            continue
+
 
     # display window
     cv2.imshow("Video Capturing", gray_img)
@@ -29,6 +37,8 @@ while True:
     cv2.imshow("Delta Frame",delta_frame)
 
     cv2.imshow("thresh frame", thresh_frame)
+
+    cv2.imshow("Color Frame", frame )
 
     key = cv2.waitKey(1)
     if key==ord('q'):
