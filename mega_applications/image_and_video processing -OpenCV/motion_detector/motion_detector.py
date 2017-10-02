@@ -1,5 +1,7 @@
 import cv2,time
 
+# capture frames
+first_frame = None
 # capture video
 video=cv2.VideoCapture(0)# 0-built in cam, 1-external cam
 
@@ -9,7 +11,11 @@ while True:
     # convert image to grayscale
     gray_img = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
     # check confirms video is running
-    # time.sleep(3)
+
+    if first_frame is None:
+        first_frame = gray_img
+        continue
+            
     # display window
     cv2.imshow("Video Capturing", gray_img)
     # period window to stay active
