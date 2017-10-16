@@ -90,7 +90,7 @@ df.plot(); #semi-colon supresses unwanted details on the plot
 ```
 
 
-![png](/resources/output_7_0.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_7_0.png)
 
 # scattter plot
 
@@ -100,7 +100,7 @@ df.plot('A', 'B', kind = 'scatter');
 ```
 
 
-![png](output_9_0.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_9_0.png)
 
 
 
@@ -109,7 +109,7 @@ df.plot.scatter('A', 'C', c='B', s = df['B'], colormap='viridis');
 ```
 
 
-![png](output_10_0.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_10_0.png)
 
 
 # sub plots
@@ -121,7 +121,7 @@ ax.set_aspect('equal')
 ```
 
 
-![png](output_12_0.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_12_0.png)
 
 
 
@@ -130,7 +130,7 @@ df.plot.box();
 ```
 
 
-![png](output_13_0.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_13_0.png)
 
 
 
@@ -139,7 +139,7 @@ df.plot.hist(alpha=0.7);
 ```
 
 
-![png](output_14_0.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_14_0.png)
 
 
 
@@ -157,7 +157,7 @@ way to estimate probability'''
 
 
 
-![png](output_15_1.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_15_1.png)
 
 
 # Pandas plotting tools
@@ -237,7 +237,7 @@ pd.tools.plotting.scatter_matrix(iris);
 ```
 
 
-![png](output_18_0.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_18_0.png)
 
 
 
@@ -247,7 +247,7 @@ pd.tools.plotting.parallel_coordinates(iris, 'Name');
 ```
 
 
-![png](output_19_0.png)
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_19_0.png)
 
 
 
