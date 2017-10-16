@@ -86,12 +86,11 @@ df.head()
 
 
 ```python
-df.plot(); #semi-colon supresses unwanted details on the plot
+df.plot(); #semi-colon to supress unwanted details on the plot
 ```
 
 
 ![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_7_0.png)
-
 # scattter plot
 
 
