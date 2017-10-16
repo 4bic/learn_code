@@ -1,5 +1,5 @@
 
-## Pandas Visualization.
+## Pandas Visualization and Plotting Tools.
 Practical applications of the course
 ```Applied Plotting, Charting & Data representation in Python ```
 
@@ -229,7 +229,7 @@ iris.head()
 </div>
 
 
-
+# Scatter Matrix
 
 ```python
 pd.tools.plotting.scatter_matrix(iris);
@@ -239,7 +239,7 @@ pd.tools.plotting.scatter_matrix(iris);
 ![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_18_0.png)
 
 
-
+# Parallel Coordinates
 ```python
 plt.figure()
 pd.tools.plotting.parallel_coordinates(iris, 'Name');
