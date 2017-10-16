@@ -90,8 +90,7 @@ df.plot(); #semi-colon supresses unwanted details on the plot
 ```
 
 
-![png](/resources/output_7_0.png)
-
+![png](https://github.com/4bic-attic/data_school/blob/data_school/coursera/resources/output_7_0.png)
 # scattter plot
 
 
