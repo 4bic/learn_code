@@ -45,6 +45,7 @@ input{
   border: 2;
   border-color: gray;
   margin: 3px;
+  margin-top: 15px;
 }
 
 .container p {
