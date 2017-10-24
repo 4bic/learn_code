@@ -2,15 +2,6 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-
-POSTGRES = {
-    'user': '4bic',
-    'pw': 'password',
-    'db': 'height_collector',
-    'host': 'localhost',
-    'port': '5432',
-}
-
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///height_collector'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://USER:PWD@HOST/DB_NAME'
 
@@ -26,7 +17,6 @@ class Data(db.Model):
         self.email_ = email_
         self.height_ = height_
 
-
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -36,11 +26,12 @@ def success():
     if request.method == "POST":
         email=request.form["email_name"]
         height=request.form["height_name"]
-        data = Data(email, height)
-        # db.init_app(app)
-        db.session.add(data)
-        db.session.commit()
-    return render_template("success.html")
+        if db.session.query(Data).filter(Data.email_ == email).count() == 0:
+            data = Data(email, height)
+            db.session.add(data)
+            db.session.commit()
+            return render_template("success.html")
+    return render_template("index.html", text="Email already use, \n Check again and respond !")
 
 if __name__ == '__main__':
     app.debug = True

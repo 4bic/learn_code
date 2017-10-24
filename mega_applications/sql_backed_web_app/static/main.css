@@ -54,6 +54,7 @@ input{
 }
 
 .email-exists {
-  color: #DDCCEE;
+  color: brown;
+  font-size: 40px;
   transition: all 0.2s ease-in-out;
 }
