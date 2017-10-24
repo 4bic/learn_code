@@ -2,14 +2,19 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLAlchemy_DATABASE_URI']='postgresql://4bic:@localhost/heigh_collector'
+app.config['SQLAlchemy_DATABASE_URI']='postgresql:///height_collector'
 db = SQLAlchemy(app)
 
-class Data(object):
+class Data(db.Model):
     """docstring for Data."""
-    def __init__(self, arg):
-        super(Data, self).__init__()
-        self.arg = arg
+    __tablename__='height_data'
+    id=db.Column(db.Integer, primary_key=True)
+    email_=db.Column(db.String(120), unique=True)
+    height_=db.Column(db.Integer)
+
+    def __init__(self, email_, height_):
+        self.email_ = email_
+        self.height_ = height_
 
 
 @app.route("/")
