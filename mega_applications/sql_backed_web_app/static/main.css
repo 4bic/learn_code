@@ -1,93 +1,57 @@
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  background-color: #E6E6FA;
-  color: #444;
-}
-
-body {
+html,body {
+  height: 100%;
   margin: 0;
-  padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #060;
 }
-
-/*
- * Formatting the header area
- */
-
-header {
-  background-color: #008080;
-  height: 35px;
+.container {
+  margin: 0 auto;
   width: 100%;
-  opacity: .9;
-  margin-bottom: 10px;
-}
-
-header h1.logo {
-  margin: 0;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  float: left;
-}
-
-header h1.logo:hover {
-  color: #800000
-  text-decoration: none;
-}
-
-/*
- * Center the body content
- */
-
-div.home {
-  padding: 10px 0 30px 0;
-  background-color: #E6E6FA;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-}
-
-div.about {
-  padding: 10px 0 30px 0;
-  background-color: #E6E6FA;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-}
-
-h2 {
-  font-size: 3em;
-  margin-top: 40px;
+  height:100%;
+  background-color:#006666;
+  color:#e6ffff;
+  overflow:hidden;
   text-align: center;
-  letter-spacing: -2px;
+  padding: 20px;
 }
 
-h3 {
-  font-size: 1.7em;
-  font-weight: 100;
-  margin-top: 30px;
+.container h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: #DDCCEE;
+  margin-top: 80
+}
+
+.form {
   text-align: center;
-  letter-spacing: -1px;
-  color: #999;
+  margin: 30px;
 }
 
-.menu {
-  float: right;
-  margin-top: 8px;
+input{
+  width: 350px;
+  height: 15px;
+  font-size: 15px;
+  margin: 2px;
+  float: center;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
 }
 
-.menu li {
-  display: inline;
+.go-button {
+  width: 70px;
+  height:30px;
+  background-color: steelblue;
+  border: 2;
+  border-color: gray;
+  margin: 3px;
 }
 
-.menu li + li {
-  margin-left: 35px;
+.container p {
+  margin: 200;
+  font-size: 25px;
 }
 
-.menu li a {
-  color: #444;
-  text-decoration: none;
+.email-exists {
+  color: #DDCCEE;
+  transition: all 0.2s ease-in-out;
 }
