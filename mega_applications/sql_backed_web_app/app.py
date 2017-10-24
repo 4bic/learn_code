@@ -1,6 +1,16 @@
 from flask import Flask, render_template, request
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLAlchemy_DATABASE_URI']='postgresql://4bic:@localhost/heigh_collector'
+db = SQLAlchemy(app)
+
+class Data(object):
+    """docstring for Data."""
+    def __init__(self, arg):
+        super(Data, self).__init__()
+        self.arg = arg
+
 
 @app.route("/")
 def index():
