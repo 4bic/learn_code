@@ -2,9 +2,19 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLAlchemy_DATABASE_URI']='postgresql:///height_collector'
-db = SQLAlchemy(app)
 
+POSTGRES = {
+    'user': '4bic',
+    'pw': 'password',
+    'db': 'height_collector',
+    'host': 'localhost',
+    'port': '5432',
+}
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///height_collector'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://USER:PWD@HOST/DB_NAME'
+
+db = SQLAlchemy(app)
 class Data(db.Model):
     """docstring for Data."""
     __tablename__='height_data'
@@ -26,8 +36,12 @@ def success():
     if request.method == "POST":
         email=request.form["email_name"]
         height=request.form["height_name"]
+        data = Data(email, height)
+        # db.init_app(app)
+        db.session.add(data)
+        db.session.commit()
     return render_template("success.html")
 
 if __name__ == '__main__':
     app.debug = True
-    app.run() #default or port=5001
+    app.run() #default or set port no with port=5001
