@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <title> "Data Collector App" </title>
     <head>
-        <meta charset="utf-8">
-        <title>height collector</title>
-        <link href="../static/main.css" rel="stylesheet">
-    </head>
-    <body>
+      <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+      <body>
         <div class="container">
-            <h1>Collect Heights</h1>
-            <h3>Please fill entries to get population data</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod t.
-                </p>
-                <div class="message">
-                    {{text | safe}}
-                </div>
-                <form action="{{url_for ('success')}}" method ="POST">
-                    <input title="Your email address will be safe with us." placeholder="Enter your email address" type="email" name="email_name" required> <br>
+          <h1> Collecting heights </h1>
+          <h3> Please fill the entries to get population statistics on height </h3>
+          <div class="email-exists">
+          {{text | safe}}
+          </div>
+  		      <div class="form">
+              <form action="{{url_for('prereg')}}" method="POST">
+  			        <input title="Your email address will be safe with us." placeholder="Enter your email address" type="email" name="email_name" required> <br>
   			        <input title="Your email address will be safe with us." placeholder="Enter your height in cm" type="number" min="50", max="300", step="0." name="height_name" required> <br>
                 <button class="go-button" type="submit"> Submit </button>
-                </form>
-
-        </div>
-    </body>
-</html>
+  		        </form>
+          </div>
+  		  </div>
+      </body>
+  </html>

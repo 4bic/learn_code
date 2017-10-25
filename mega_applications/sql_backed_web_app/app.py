@@ -9,7 +9,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///height_collector'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://USER:PWD@HOST/DB_NAME'
 db = SQLAlchemy(app)
 
-def send_email(email, height):
+# Create our database model
+
+def send_email(email, height, average_value, count):
     FROM_EMAIL= "jaribio99@gmail.com"
     FROM_PASSWORD = "7Gh-T58-zCx-gn4"
     message="Hey there, your height is <strong> %s</strong>. <br> \
@@ -21,7 +23,8 @@ def send_email(email, height):
     subject="Height Data"
     toList=[email]
 
-    gmail = smtplib.SMTP('smtp.gmail.com',587)
+
+    gmail = smtplib.SMTP('smtp.gmail.com',465)
     gmail.ehlo()
     gmail.starttls()
     gmail.login(FROM_EMAIL,FROM_PASSWORD)
@@ -33,6 +36,7 @@ def send_email(email, height):
 
     gmail.send_message(msg)
 
+
 class User(db.Model):
     __tablename__ = "users"
     id = db.Column(db.Integer, primary_key=True)
@@ -43,24 +47,13 @@ class User(db.Model):
         self.email = email
         self.height = height
 
-#
-# class Data(db.Model):
-#     """docstring for Data."""
-#     __tablename__='height_data'
-#     id=db.Column(db.Integer, primary_key=True)
-#     email_=db.Column(db.String(120), unique=True)
-#     height_=db.Column(db.Integer)
-#
-#     def __init__(self, email_, height_):
-#         self.email_ = email_
-#         self.height_ = height_
-#
-@app.route("/")
+# Set "homepage" to index.html
+@app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 
 # Save e-mail to database and send to success page
-@app.route('/prereg')
+@app.route('/prereg', methods=["POST"])
 def prereg():
     email_ = None
     height_ = None
@@ -74,15 +67,17 @@ def prereg():
             reg = User(email_, height_)
             db.session.add(reg)
             db.session.commit()
-            
             average_query=db.session.query(func.avg(User.height))
             average_value=round(average_query.scalar(),1)
             count=db.session.query(User.height).count()
 
+            #print(float(average.all()[0]))
+            #print(type(average))
+            #print(average.value(User.height))
             send_email(email_, height_, average_value, count)
             return render_template('success.html')
     return render_template('index.html', text="Seems like we've got something from that email already!")
 
 if __name__ == '__main__':
     app.debug = True
-    app.run() #default or set port no with port=5001
+    app.run()
