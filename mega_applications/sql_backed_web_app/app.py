@@ -1,39 +1,87 @@
 from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
-from send_mail import send_email
+from flask.ext.sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import func
+import smtplib
+from email.mime.text import MIMEText
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///height_collector'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://USER:PWD@HOST/DB_NAME'
-
 db = SQLAlchemy(app)
-class Data(db.Model):
-    """docstring for Data."""
-    __tablename__='height_data'
-    id=db.Column(db.Integer, primary_key=True)
-    email_=db.Column(db.String(120), unique=True)
-    height_=db.Column(db.Integer)
 
-    def __init__(self, email_, height_):
-        self.email_ = email_
-        self.height_ = height_
+def send_email(email, height):
+    FROM_EMAIL= "jaribio99@gmail.com"
+    FROM_PASSWORD = "7Gh-T58-zCx-gn4"
+    message="Hey there, your height is <strong> %s</strong>. <br> \
+    Average height of <strong>%s</strong> users is <strong>%s</strong>. <br> \
+    Thanks!" \
+    % (height, count, average_value)
+    print("e: ",email)
+    print("m: ",message)
+    subject="Height Data"
+    toList=[email]
 
+    gmail = smtplib.SMTP('smtp.gmail.com',587)
+    gmail.ehlo()
+    gmail.starttls()
+    gmail.login(FROM_EMAIL,FROM_PASSWORD)
+
+    msg=MIMEText(message, 'html')
+    msg['Subject']=subject
+    msg['To']=','.join(toList)
+    msg['From']=FROM_EMAIL
+
+    gmail.send_message(msg)
+
+class User(db.Model):
+    __tablename__ = "users"
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(120), unique=True)
+    height = db.Column(db.Integer)
+
+    def __init__(self, email, height):
+        self.email = email
+        self.height = height
+
+#
+# class Data(db.Model):
+#     """docstring for Data."""
+#     __tablename__='height_data'
+#     id=db.Column(db.Integer, primary_key=True)
+#     email_=db.Column(db.String(120), unique=True)
+#     height_=db.Column(db.Integer)
+#
+#     def __init__(self, email_, height_):
+#         self.email_ = email_
+#         self.height_ = height_
+#
 @app.route("/")
 def index():
     return render_template("index.html")
 
-@app.route("/success", methods=["POST"])
-def success():
-    if request.method == "POST":
-        email=request.form["email_name"]
-        height=request.form["height_name"]
-        send_email(email, height)
-        if db.session.query(Data).filter(Data.email_ == email).count() == 0:
-            data = Data(email, height)
-            db.session.add(data)
+# Save e-mail to database and send to success page
+@app.route('/prereg')
+def prereg():
+    email_ = None
+    height_ = None
+    if request.method == 'POST':
+        email_ = request.form['email_name']
+        print("Email is: ",email_)
+        height_ = request.form['height_name']
+
+        # Check that email does not already exist (not a great query, but works)
+        if not db.session.query(User).filter(User.email == email_).count():
+            reg = User(email_, height_)
+            db.session.add(reg)
             db.session.commit()
-            return render_template("success.html")
-    return render_template("index.html", text="Email already use, Check again and respond !")
+            
+            average_query=db.session.query(func.avg(User.height))
+            average_value=round(average_query.scalar(),1)
+            count=db.session.query(User.height).count()
+
+            send_email(email_, height_, average_value, count)
+            return render_template('success.html')
+    return render_template('index.html', text="Seems like we've got something from that email already!")
 
 if __name__ == '__main__':
     app.debug = True
