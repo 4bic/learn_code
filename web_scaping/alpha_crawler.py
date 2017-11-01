@@ -29,11 +29,35 @@ def crawl_sitemap(url):
     for link in links:
         html = download(link)
 
+# crawl links
+def link_crawler(seed_url, link_regex):
+    #  Crawl from the given seed URL following links matched by link_regex
+    crawl_queue = [seed_url]
+
+    while crawl_queue:
+        url = crawl_queue.pop()
+        html = download(url)
+        # filter for links matching regular expression
+        for links in get_links(html):
+            if re.match(link_regex, link):
+                crawl_queue.append(link)
+
+def get_links(html):
+    # return list of links available
+    # extract all links from webpage
+    webpage_regex = re.compile('<a[^>]+href=["\'](.*?)["\']',
+                    re.IGNORECASE)
+    # list links from webpage
+    return webpage_regex.findall(html)
+
+
 
 if __name__ == '__main__':
     # url = 'http://httpstat.us/500'
     num_retries = 5
     # url= 'http://supplier.treasury.go.ke/site/tenders.go/index.php'
-    url = 'http://supplier.treasury.go.ke/site/tenders.go/index.php/public/tenders/cat:1'
+    url = 'http://supplier.treasury.go.ke/site/tenders.go/index.php/public/'
+    link_regex = url/tenders/
     download(url, num_retries)
     crawl_sitemap(url)
+    link_crawler(seed_url, link_regex)
