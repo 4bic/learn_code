@@ -32,7 +32,7 @@ def plot_decision_tree(clf, feature_names, class_names):
     # pydotplus module is not found when running from within the notebook environment.  The following code
     # may help to guarantee the module is installed in the current notebook environment directory.
     #
-    # import sys; sys.executable
+    import sys; sys.executable
     # !{sys.executable} -m pip install pydotplus
 
     export_graphviz(clf, out_file="adspy_temp.dot", feature_names=feature_names, class_names=class_names, filled = True, impurity = False)
