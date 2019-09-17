@@ -109,7 +109,7 @@ pygame==1.9.2b8
 Pygments==2.2.0
 PyInstaller==3.3
 pymongo==3.0.2
-pyOpenSSL==0.15.1
+pyOpenSSL==17.5.0
 pyparsing==2.1.10
 python-dateutil==2.6.1
 pytz==2014.4
