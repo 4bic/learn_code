@@ -34,7 +34,7 @@ django-pagination==1.0.7
 django-pipeline==1.5.4
 django-pipeline-compass-rubygem==0.1.8
 django-registration-defaults==0.3
-djangorestframework==3.3.2
+djangorestframework==3.9.1
 docker-compose==1.9.0
 docker-py==1.10.6
 docker-pycreds==0.2.1
