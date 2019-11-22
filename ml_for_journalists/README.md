@@ -4,6 +4,6 @@ This code supports workshops taught by members of the Quartz AI Studio for getti
 
 ## Resources
 
-    - Quartz AI Studio: https://qz.ai
-    - fast.ai: https://fast.ai
-    - practical deep learning: https://course.fast.ai/
+- Quartz AI Studio: https://qz.ai
+- fast.ai: https://fast.ai
+- practical deep learning: https://course.fast.ai/
