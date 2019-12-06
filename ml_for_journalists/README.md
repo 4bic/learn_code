@@ -15,7 +15,7 @@ This code supports workshops taught by members of the Quartz AI Studio for getti
 
 -   Make custom detectors specific to your investigation.
 
-- []   Introduction to transfer learning and fast.ai
+- [x]   Introduction to transfer learning and fast.ai
 - []    Training a custom model to sort images
 - []    Using your own data & saving your work
 - []    Discussion: Data as images
