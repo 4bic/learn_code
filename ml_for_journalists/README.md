@@ -24,8 +24,8 @@ This code supports workshops taught by members of the Quartz AI Studio for getti
 
 - Training a machine-learning model to work well is pretty straightforward. Getting it to work even better, or to fix problems when they arise, takes more craft
 
-- []    Finding particular objects or scenes inside videos
-- []    Improving the accuracy of your model
+- [x]    Finding particular objects or scenes inside videos
+- [x]    Improving the accuracy of your model
 
 ## Module Four : Analyzing text documents
 
