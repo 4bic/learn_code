@@ -31,8 +31,8 @@ This code supports workshops taught by members of the Quartz AI Studio for getti
 
 -  sort documents into two piles based on their contents?
 
-- []    Entity extraction using open-source libraries
-- []    Sorting tweets into useful piles
+- [x]    Entity extraction using open-source libraries
+- [x]    Sorting tweets into useful piles
 
 
 
