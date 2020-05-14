@@ -8,7 +8,7 @@ Numpy is also incredibly fast, as it has bindings to C libraries. For more info 
 Numpy has many built-in functions and capabilities. 
 
 Some of the most important aspects of Numpy are: 
-    - vectors,
-    - arrays,
-    - matrices, and 
-    - number generation.
+- vectors,
+- arrays,
+- matrices, and 
+- number generation.
