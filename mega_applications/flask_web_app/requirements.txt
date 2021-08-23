@@ -70,7 +70,7 @@ jsonschema==2.5.1
 jsontableschema==0.10.1
 jupyter-client==5.1.0
 jupyter-core==4.3.0
-jupyterlab==0.27.0
+jupyterlab==1.2.21
 jupyterlab-launcher==0.5.3
 linear-tsv==1.0.0
 lxml==3.5.0
