@@ -121,7 +121,7 @@ requests-ftp==0.3.1
 rfc3986==0.4.1
 scandir==1.6
 scipy==0.19.1
-Scrapy==1.0.5
+Scrapy==2.6.2
 seaborn==0.8.1
 service-identity==16.0.0
 simplegeneric==0.8.1
